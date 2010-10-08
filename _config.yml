@@ -1,2 +1,4 @@
 markdown: rdiscount
-pygments: true
+pygments: false
+lsi: false
+permalink: /:year/:month/:title.html

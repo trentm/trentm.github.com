@@ -3,6 +3,7 @@ layout: post
 title: A first post test with markdown content
 date: 2010-10-08 00:04:00
 tags: [foo, bar]
+boom: pow
 ---
 
 # tester
@@ -10,6 +11,7 @@ tags: [foo, bar]
 **Hi**, there from [markdown](http://google.com/?q=markdown).
 
 tags: {{ tags }}
+boom: {{ boom }}
 
 
 {% for c in tags %}

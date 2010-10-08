@@ -14,6 +14,7 @@
     - can this do category feeds? might need to manually do that with liquid
 - better 404.html
 - analytics
+- turn lsi and pygments back on
 - plan the switch, <link> for feedburner
 - browse http://github.com/mojombo/jekyll/wiki/Sites for interesting ideas
 - play with Qunit and test/... from html5boilerplate. Qunit vs. selenium?
