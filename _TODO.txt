@@ -1,4 +1,4 @@
-- html 5 boilerplate
+- html 5 boilerplate: lots of learning to do here
 - css
 - learn liquid
 - importing a few of my posts: all the markdown/html
@@ -15,4 +15,7 @@
 - better 404.html
 - analytics
 - plan the switch, <link> for feedburner
-- browse 
+- browse http://github.com/mojombo/jekyll/wiki/Sites for interesting ideas
+- play with Qunit and test/... from html5boilerplate. Qunit vs. selenium?
+- apple-touch-icon.png
+- yahoo JS profiling stuff from html5boilerplate (I've removed it)
