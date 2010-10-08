@@ -1,3 +1,4 @@
+source: www
 markdown: rdiscount
 pygments: false
 lsi: false
