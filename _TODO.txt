@@ -1,20 +1,20 @@
-- learn liquid: http://www.liquidmarkup.org/
-  http://github.com/tobi/liquid/wiki/Liquid-for-Designers
 - css
 - importing a few of my posts: all the markdown/html
     - also move associated images/files from Dropbox to here
+- try moving site bits to "www" dir and use "source" config
 - disqus
     - e.g. http://html5boilerplate.com/
 - importing existing comments
-- thinking about redirects:
-    Perhaps using "permalinks" in
-    http://github.com/mojombo/jekyll/wiki/YAML-Front-Matter?
+- thinking about redirects: use permalink front matter to get the same
+  URLs for all previous posts as on trentmick.blogspot.com
 - tags -> categories
     - what is the impact on this on my Mozilla Planet inclusion?!
     - can this do category feeds? might need to manually do that with liquid
 - better 404.html
 - analytics
 - turn lsi and pygments back on
+- offer a std "reply to @trentmick on Twitter", which includes enough
+  info (bit.ly API?) to track ... and then show that via JS
 - plan the switch, <link> for feedburner
 - browse http://github.com/mojombo/jekyll/wiki/Sites for interesting ideas
 - play with Qunit and test/... from html5boilerplate. Qunit vs. selenium?
@@ -32,3 +32,4 @@
     """
 - if want archives, see http://github.com/henrik/jekyll
   and http://henrik.nyh.se/2009/04/jekyll
+
