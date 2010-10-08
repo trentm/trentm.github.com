@@ -4,6 +4,7 @@
 - importing a few of my posts: all the markdown/html
     - also move associated images/files from Dropbox to here
 - disqus
+    - e.g. http://html5boilerplate.com/
 - importing existing comments
 - thinking about redirects:
     Perhaps using "permalinks" in
