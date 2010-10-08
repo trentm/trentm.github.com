@@ -1,3 +1,8 @@
+---
+layout: post
+title: A first post test with markdown content
+---
+
 # tester
 
 **Hi**, there from [markdown](http://google.com/?q=markdown).
