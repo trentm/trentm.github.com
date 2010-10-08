@@ -1,0 +1,17 @@
+- html 5 boilerplate
+- css
+- learn liquid
+- importing a few of my posts: all the markdown/html
+    - also move associated images/files from Dropbox to here
+- disqus
+- importing existing comments
+- thinking about redirects:
+    Perhaps using "permalinks" in
+    http://github.com/mojombo/jekyll/wiki/YAML-Front-Matter?
+- tags -> categories
+    - what is the impact on this on my Mozilla Planet inclusion?!
+    - can this do category feeds? might need to manually do that with liquid
+- better 404.html
+- analytics
+- plan the switch, <link> for feedburner
+- browse 
