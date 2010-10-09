@@ -1,7 +1,6 @@
 - css
-- importing a few of my posts: all the markdown/html
+- manually importing a few of my posts
     - also move associated images/files from Dropbox to here
-- try moving site bits to "www" dir and use "source" config
 - disqus
     - e.g. http://html5boilerplate.com/
 - importing existing comments

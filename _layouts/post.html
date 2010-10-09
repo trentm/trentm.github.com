@@ -2,8 +2,19 @@
 layout: default
 ---
 
+<div id="title">
+{{ post.title }}
+</div>
+
 <div id="post">
 {{ content }}
+</div>
+
+<div id="tags">
+<p>Tagged:
+{% for tag in post.categories %}
+{{ tag }}{% unless forloop.last %},{% endunless %}
+{% endfor %}</p>
 </div>
 
 <div id="related">
