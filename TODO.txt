@@ -12,6 +12,9 @@
 - better 404.html
 - analytics
 - turn lsi and pygments back on
+- category/tag listings: try to do this on the index page. ideas:
+    - a "by tag" listing, then can just link to an anchor on that page
+    - JS to filter the list down by tag
 - offer a std "reply to @trentmick on Twitter", which includes enough
   info (bit.ly API?) to track ... and then show that via JS
 - plan the switch, <link> for feedburner

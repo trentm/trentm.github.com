@@ -1,4 +1,4 @@
-source: www
+source: src
 markdown: rdiscount
 pygments: false
 lsi: false

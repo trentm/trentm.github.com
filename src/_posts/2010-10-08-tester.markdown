@@ -2,8 +2,7 @@
 layout: post
 title: A first post test with markdown content
 date: 2010-10-08 00:04:00
-tags: [foo, bar]
-boom: pow
+categories: [first, markdown, python]
 ---
 
 # tester

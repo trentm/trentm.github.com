@@ -12,7 +12,7 @@ layout: default
 
 <div id="tags">
 <p>Tagged:
-{% for tag in post.categories %}
+{% for tag in page.categories %}
 {{ tag }}{% unless forloop.last %},{% endunless %}
 {% endfor %}</p>
 </div>

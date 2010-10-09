@@ -1,7 +1,7 @@
 ---
 layout: post
 title: who knew path joining differed so between Python, Ruby, Node, Perl
-categories: [path, languages, python, ruby, nodejs, perl]
+categories: [path, python, ruby, nodejs, perl]
 ---
 
 In Python I do a lot of path manipulations for build systems, various
