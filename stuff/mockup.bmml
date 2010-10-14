@@ -1,0 +1,53 @@
+<mockup version="1.0" skin="sketch" measuredW="1208" measuredH="909" mockupW="1050" mockupH="887">
+  <controls>
+    <control controlID="0" controlTypeID="com.balsamiq.mockups::BrowserWindow" x="148" y="12" w="1001" h="887" measuredW="450" measuredH="400" zOrder="0" locked="true" isInGroup="-1"/>
+    <control controlID="5" controlTypeID="com.balsamiq.mockups::HRule" x="162" y="179" w="971" h="-1" measuredW="100" measuredH="5" zOrder="4" locked="false" isInGroup="-1"/>
+    <control controlID="7" controlTypeID="com.balsamiq.mockups::Icon" x="591" y="116" w="-1" h="-1" measuredW="48" measuredH="48" zOrder="5" locked="false" isInGroup="-1"/>
+    <control controlID="8" controlTypeID="com.balsamiq.mockups::Paragraph" x="235" y="326" w="761" h="140" measuredW="200" measuredH="140" zOrder="6" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>In%20Python%20I%20do%20a%20lot%20of%20path%20manipulations%20for%20build%20systems%2C%20various%20command-line%20utilities%20and%20Komodo%20support%20modules.%20Typically%20this%20is%20with%20Python%u2019s%20os.path%20module.%20One%20thing%20I%u2019ve%20come%20to%20expect%20of%20path%20joining%2C%20os.path.join%2C%20is%20this%20%28apparently%20rare%29%20detail%3A%0A%20%0A...</text>
+      </controlProperties>
+    </control>
+    <control controlID="9" controlTypeID="com.balsamiq.mockups::Paragraph" x="235" y="498" w="356" h="24" measuredW="200" measuredH="140" zOrder="7" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Tagged%3A%20perl%2C%20nodejs%2C%20ruby%2C%20path%2C%20python</text>
+      </controlProperties>
+    </control>
+    <control controlID="10" controlTypeID="com.balsamiq.mockups::StickyNote" x="1057" y="135" w="141" h="92" measuredW="109" measuredH="123" zOrder="8" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>%22TM%22%20in%20a%20nice%20font%20for%20icon%3F</text>
+      </controlProperties>
+    </control>
+    <control controlID="11" controlTypeID="com.balsamiq.mockups::Label" x="235" y="199" w="-1" h="-1" measuredW="761" measuredH="37" zOrder="1" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>24</size>
+        <text>who%20knew%20path%20joining%20differed%20so%20between%20Python%2C%20Ruby%2C%20Node%2C%20Perl</text>
+      </controlProperties>
+    </control>
+    <control controlID="12" controlTypeID="com.balsamiq.mockups::Label" x="235" y="245" w="-1" h="-1" measuredW="95" measuredH="29" zOrder="2" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>5263440</color>
+        <size>18</size>
+        <text>Trent%20Mick</text>
+      </controlProperties>
+    </control>
+    <control controlID="13" controlTypeID="com.balsamiq.mockups::Label" x="235" y="274" w="-1" h="-1" measuredW="77" measuredH="23" zOrder="3" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>5263440</color>
+        <text>2010%20Aug%2016</text>
+      </controlProperties>
+    </control>
+    <control controlID="14" controlTypeID="com.balsamiq.mockups::Label" x="235" y="537" w="-1" h="-1" measuredW="92" measuredH="23" zOrder="9" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>0</color>
+        <size>13</size>
+        <text>Related%20Posts%3A</text>
+      </controlProperties>
+    </control>
+    <control controlID="15" controlTypeID="com.balsamiq.mockups::List" x="229" y="559" w="309" h="72" measuredW="100" measuredH="126" zOrder="10" locked="false" isInGroup="-1">
+      <controlProperties>
+        <borderStyle>none</borderStyle>
+      </controlProperties>
+    </control>
+  </controls>
+</mockup>
