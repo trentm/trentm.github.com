@@ -1,3 +1,5 @@
+(from <http://github.com/tobi/liquid/wiki/Liquid-for-Designers>)
+
 There are two types of markup in Liquid: Output and Tag. 
 
 * Output markup (which may resolve to text) is surrounded by
