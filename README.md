@@ -3,7 +3,7 @@ is just a Jekyll-based site.
 
 # Dev testing
 
-    ./dev
+    ./_stuff/devserver
     
 Setup for dev testing:
 
@@ -12,7 +12,7 @@ Setup for dev testing:
 3. rvm --default 1.8.7-r147
 4. gem install jekyll
 5. gem install rdiscount
-    
+
 
 # Notes & Links
 
