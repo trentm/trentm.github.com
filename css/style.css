@@ -1,19 +1,12 @@
-/* 
-  style.css contains a reset, font normalization and some base styles.
-  
-  credit is left where credit is due.
-  additionally, much inspiration was taken from these projects:
-    yui.yahooapis.com/2.8.1/build/base/base.css
-    camendesign.com/design/
-    praegnanz.de/weblog/htmlcssjs-kickstart
-*/
+/* Trent Mick's blog's CSS. Based heavily (at least initially) on
+ * <http://html5boilerplate.com/>.
+ */
 
-/* 
-  html5doctor.com Reset Stylesheet (Eric Meyer's Reset Reloaded + HTML5 baseline)
-  v1.4 2009-07-27 | Authors: Eric Meyer & Richard Clark
-  html5doctor.com/html-5-reset-stylesheet/
-*/
-
+/* {{{ reset
+ * html5doctor.com Reset Stylesheet (Eric Meyer's Reset Reloaded + HTML5 baseline)
+ * v1.4 2009-07-27 | Authors: Eric Meyer & Richard Clark
+ * html5doctor.com/html-5-reset-stylesheet/
+ */
 html, body, div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 abbr, address, cite, code,
@@ -33,7 +26,7 @@ time, mark, audio, video {
   font-size:100%;
   vertical-align:baseline;
   background:transparent;
-}                  
+}
 
 article, aside, figure, footer, header, 
 hgroup, nav, section { display:block; }
@@ -61,59 +54,89 @@ table { border-collapse:collapse; border-spacing:0; }
 hr { display:block; height:1px; border:0; border-top:1px solid #ccc; margin:1em 0; padding:0; }
 
 input, select { vertical-align:middle; }
-/* END RESET CSS */
+/* }}} */
 
 
-/*
-fonts.css from the YUI Library: developer.yahoo.com/yui/
-          Please refer to developer.yahoo.com/yui/fonts/ for font sizing percentages
 
-There are three custom edits:
- * remove arial, helvetica from explicit font stack
- * make the line-height relative and unit-less
- * remove the pre, code styles
-*/
-body { font:13px sans-serif; *font-size:small; *font:x-small; line-height:1.22; }
+/* {{{ base styles
+ * Generally the html5boilerplate stuff is at the top; mine below.
+ */
 
+/* http://yui.yahooapis.com/2.8.2r1/build/fonts/fonts.css */
 table { font-size:inherit; font:100%; }
-
 select, input, textarea { font:99% sans-serif; }
 
-
-/* normalize monospace sizing 
- * en.wikipedia.org/wiki/MediaWiki_talk:Common.css/Archive_11#Teletype_style_fix_for_Chrome
+/* A vertical rhythm: <http://webtypography.net/Rhythm_and_Proportion/Vertical_Motion/2.2.2/>
+ * - 24px rhythm.
+ * - Typefaces I like: Crimson Text, Cuprum, IM Fell English (rough print),
+ *   Lobster (heavy), IM Fell DW Pica (awesome for numbers, oldy worldy)
  */
-pre, code, kbd, samp { font-family: monospace, sans-serif; }
- 
+body {
+  line-height: 24px;
+  font-family: Helvetica,Verdana,Arial,sans-serif;
+  font-size: 15px;
+  /*font-family: 'IM Fell English', Helvetica, Arial, sans-serif;*/
+  /*font-size: 16px;*/
+}
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'IM Fell English';
+  font-weight: bold;
+  /* http://www.aestheticallyloyal.com/public/optimize-legibility/ */ 
+  text-rendering: optimizeLegibility;
+}
+h1 {
+  font-size: 36px;
+  line-height: 48px;
+  margin: 48px 0 24px 0;
+}
+h2 {
+  font-size: 28px;
+  line-height: 48px;
+  margin: 24px 0 0 0;
+}
+h3 {
+  font-size: 21px;
+  line-height: 24px;
+  margin: 24px 0 0 0;
+}
+h4 {
+  font-size: 16px;
+  line-height: 24px;
+  margin: 24px 0 0 0;
+}
+h5 {
+  font-size: 14px;
+  line-height: 24px;
+  margin: 24px 0 0 0;
+}
+h6 {
+  color: #666;
+  font-size: 14px;
+  line-height: 24px;
+  margin: 24px 0 0 0;
+}
+hr {
+  /* TODO: can have a centered bgimage decoration for nice hr? */
+  margin: -1px 0 0 0;
+  margin: 22px 0 24px 0;
+}
+p + p {
+  text-indent: 24px;
+  /*margin-top: 24px;*/
+}
 
 
-/* 
- * minimal base styles 
- */
-
-
-/* #444 looks better than black: twitter.com/H_FJ/statuses/11800719859 */ 
+/* #444 looks better than black: http://twitter.com/H_FJ/statuses/11800719859 */ 
 body, select, input, textarea { color:#444; }
-
-/* Headers (h1,h2,etc) have no default font-size or margin,
-   you'll want to define those yourself. */ 
- 
-/* www.aestheticallyloyal.com/public/optimize-legibility/ */ 
-h1,h2,h3,h4,h5,h6 { font-weight: bold; text-rendering: optimizeLegibility; }
 
 /* maxvoltar.com/archive/-webkit-font-smoothing */
 html { -webkit-font-smoothing: antialiased; }
 
- 
-/* Accessible focus treatment: people.opera.com/patrickl/experiments/keyboard/test */
-a:hover, a:active { outline: none; }
-
 a, a:active, a:visited { color:#607890; }
 a:hover { color:#036; }
+/* Accessible focus treatment: http://people.opera.com/patrickl/experiments/keyboard/test */
+a:hover, a:active { outline: none; }
 
-
-ul { margin-left:30px; }
-ol { margin-left:30px; list-style-type: decimal; }
 
 small { font-size:85%; }
 strong, th { font-weight: bold; }
@@ -122,16 +145,6 @@ td, td img { vertical-align:top; }
 
 sub { vertical-align: sub; font-size: smaller; }
 sup { vertical-align: super; font-size: smaller; }
-
-pre { 
-  padding: 15px; 
-  
-  /* www.pathf.com/blogs/2008/05/formatting-quoted-code-in-blog-posts-css21-white-space-pre-wrap/ */
-  white-space: pre; /* CSS2 */
-  white-space: pre-wrap; /* CSS 2.1 */
-  white-space: pre-line; /* CSS 3 (and 2.1 as well, actually) */
-  word-wrap: break-word; /* IE */
-}
 
 /* align checkboxes, radios, text inputs with their label
    by: Thierry Koblentz tjkdesign.com/ez-css/css/base.css  */
@@ -142,34 +155,69 @@ input[type="checkbox"] { vertical-align: bottom; *vertical-align: baseline; }
 /* hand cursor on clickable input elements */
 label, input[type=button], input[type=submit], button { cursor: pointer; }
 
-
-/* These selection declarations have to be separate.
-   No text-shadow: twitter.com/miketaylr/status/12228805301 
-   Also: hot pink. */
-::-moz-selection{ background: #FF5E99; color:#fff; text-shadow: none; }
-::selection { background:#FF5E99; color:#fff; text-shadow: none; } 
-
-/*  j.mp/webkit-tap-highlight-color */
-a:link { -webkit-tap-highlight-color: #FF5E99; } 
-
-
 /* always force a scrollbar in non-IE */
 html { overflow-y: scroll; }
 
 /* make buttons play nice in IE:    
    www.viget.com/inspire/styling-the-button-element-in-internet-explorer/ */
-button {  width: auto; overflow: visible; }
+button { width: auto; overflow: visible; }
  
 /* bicubic resizing for non-native sized IMG: 
    code.flickr.com/blog/2008/11/12/on-ui-quality-the-little-things-client-side-image-resizing/ */
 .ie7 img { -ms-interpolation-mode: bicubic; }
 
 
+blockquote {
+  font-family: "IM Fell English";
+  font-size: 18px;
+  color: #555;
+  margin: 24px 15% 24px 15%;
+}
+blockquote cite:before {
+  content: "\2014 ";
+}
+blockquote p.hangquotes, blockquote.hangquotes {
+  text-indent: -0.5em;
+}
 
-/* 
- * Non-semantic helper classes 
- */
+ol {
+  margin: 12px 0;
+  list-style-type: decimal;
+}
+ul {
+  margin: 12px 0;
+  /* TODO: interesting bullets: one of the decorations I found */
+}
 
+/* XXX START HERE with pre, code, kbd, dl, etc. */
+
+pre { 
+  padding: 15px; 
+  
+  /* http://www.pathf.com/blogs/2008/05/formatting-quoted-code-in-blog-posts-css21-white-space-pre-wrap/ */
+  white-space: pre; /* CSS2 */
+  white-space: pre-wrap; /* CSS 2.1 */
+  white-space: pre-line; /* CSS 3 (and 2.1 as well, actually) */
+  word-wrap: break-word; /* IE */
+}
+/* TODO: merge my pre (below) with html5boilerplate pre (above) */
+pre {
+    background-color: #f1f1f1;
+    border: solid #ccc 1px;
+    padding: .5em;
+    overflow: auto;
+}
+
+kbd {
+  margin: 0.1em;
+  padding: 0.1em;
+  border: 1px #ccc;
+}
+
+/* }}} */
+
+
+/* {{{ classes */
 /* for image replacement */
 .ir { display:block; text-indent:-999em; overflow:hidden; background-repeat: no-repeat; }
 
@@ -187,122 +235,74 @@ button {  width: auto; overflow: visible; }
 /* Hide visually and from screenreaders, but maintain layout */
 .invisible { visibility: hidden; }
 
-/* >> The Magnificent CLEARFIX << */
+/* The Magnificent CLEARFIX */
 .clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
 .clearfix { display: inline-block; }
 * html .clearfix { height: 1%; } /* Hides from IE-mac \*/
 .clearfix { display: block; }
-
-
-
-/* {{{ base -- basic HTML element styles */
-body {
-    line-height: 1.4em;
-    background: #fff;
-    font-family: arial, helvetica, clean, sans-serif;
-    font-size: 14px;
-}
-ul, ol {
-    padding-left: 20px;
-    padding-top: 5px;
-    margin-bottom: 10px;
-}
-ol { list-style-type: decimal; }
-ol ol { list-style-type: upper-roman; }
-ol ol ol { list-style-type: upper-alpha; }
-ol ol ol ol { list-style-type: lower-roman; }
-ol ol ol ol ol { list-style-type: lower-alpha; }
-th, td {
-    text-align: left;
-    font-size: 14px;
-    padding-right: 1em;
-}
-a:focus {
-    outline: thin dotted;
-    outline-color: inherit;
-}
-/* XXX
-a:link {
-  color: $linkcolor;
-}
-a:visited {
-  color: $visitedlinkcolor;
-}
-a:hover {
-  color: $hoverlinkcolor;
-}
-a:active {
-  color: $activelinkcolor;
-  text-decoration: none;
-}
-*/
-
-code, pre {
-    /* override IE6 default */
-    font-size: 1em;
-}
-code {
-    color: #0D5953;
-}
-kbd {
-    margin: 0.1em;
-    padding: 0.1em;
-    border: 1px #ccc;
-}
-hr {
-    height: 1px;
-    background-color: #000;
-    color: #000;
-    margin: 2em 0;
-}
-pre {
-    background-color: #f1f1f1;
-    border: solid #ccc 1px;
-    padding: .5em;
-    overflow: auto;
-}
-blockquote {
-    border-left: 3px solid #e1e1ee;
-    padding-left: 10px;
-    margin-right: 20px;
-}
-
-
-img {
-  border: none;
-}
-
-p {
-    margin: 1em 0;
-    padding: 0;
-}
 /* }}} */
 
 
-/* {{{ layout */
+/* {{{ layout
+ * TODO: does 'margin: 0 auto' work in old enough IE? if not, switch to text-align hack
+ */
 body {
-  min-width: 650px;
-  text-align: center;
+  margin: 8px;
 }
 #wrapper {
-  max-width: 700px;
-  padding: 0 10px;
   margin: 0 auto;
-  text-align: left;
+  width: 650px;  
+  position: relative; 
 }
 #main {
   min-height: 300px;
 }
-#footer {
-  clear: both;
-}
 /* }}} */
 
 
-/* 
- * print styles
- * inlined to avoid required HTTP connection www.phpied.com/delay-loading-your-print-css/ 
- */
+/* {{{ play */
+/*
+   Like:
+    Crimson Text
+    Cuprum
+    IM Fell English (rough print)
+    Lobster (heavy)
+    
+    IM Fell DW Pica: awesome for numbers, oldy worldy
+#header {
+  position: relative;
+  height: 100px;
+}
+#header .bar,
+#footer .bar {
+  width: 100%;
+  height: 10px;
+  background-color: #3D3D3D;
+}
+#header .box {
+  position: absolute;
+  top: 0;
+  left: -150px;
+  height: 70px;
+  width: 70px;
+  border: 10px solid #3D3D3D;
+}
+.tm {
+  font-family: 'IM Fell English', serif;
+  text-shadow: 6px 6px 6px #ccc;
+  font-size: 48px;
+  position: relative;
+  top: 25px;
+  left: 5px;
+}
+#footer {
+  margin-top: 30px;
+}
+*/
+/* }}} */
+
+
+/* {{{ print */
 @media print {
   * { background: transparent !important; color: #444 !important; text-shadow: none; }
 
@@ -324,13 +324,10 @@ body {
 
   h2, h3{ page-break-after: avoid; }
 }
+/* }}} */
 
 
-
-/*
- * Media queries for responsive design
- */
-
+/* {{{ Media queries for responsive design */
 @media all and (orientation:portrait) { 
   /* Style adjustments for portrait mode goes here */
   
@@ -345,8 +342,7 @@ body {
    Consider this: www.cloudfour.com/css-media-query-for-mobile-is-fools-gold/ */
 @media screen and (max-device-width: 480px) {
   
-  
   /* Prevent iOS, WinMobile from adjusting font size */
   html { -webkit-text-size-adjust:none; -ms-text-size-adjust:none; } 
 }
-
+/* }}} */

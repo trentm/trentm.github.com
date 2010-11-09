@@ -1,4 +1,9 @@
 - css:
+    <http://localhost:4000/2010/07/komodo-6-beta-2.html>
+    font size: http://developer.yahoo.com/yui/fonts/#default
+    hN
+    
+- css:
     - use body text styles from
       http://dailyjs.com/2010/10/11/functional-koans/ ?
       close enough to trentmick.blogpost.com that I should
@@ -7,10 +12,26 @@
         - h* styling (a la kd)
         - consolas for pre/code, also pre/code styling a la kd
         - consider that cute keyboard styling
+- fonts css section note: This is from the html5boilerplate, but I'm ditching
+  it:
+        /* {{{ fonts: based on <http://developer.yahoo.com/yui/fonts/>
+         * Notes:
+         * - http://developer.yahoo.com/yui/fonts/#default
+         * - http://yui.yahooapis.com/2.8.2r1/build/fonts/fonts.css
+         */
+        body { font:13px/1.231 sans-serif; *font-size:small; *font:x-small; }
+        
+        table { font-size:inherit; font:100%; }
+        
+        select, input, textarea { font:99% sans-serif; }
+        
+        /* normalize monospace sizing 
+         * http://en.wikipedia.org/wiki/MediaWiki_talk:Common.css/Archive_11#Teletype_style_fix_for_Chrome
+         */
+        pre, code, kbd, samp { font-family: monospace, sans-serif; }
+        /* }}} */
 - manually importing a few of my posts
     - also move associated images/files from Dropbox to here
-- disqus
-    - e.g. http://html5boilerplate.com/
 - importing existing comments
 - thinking about redirects: use permalink front matter to get the same
   URLs for all previous posts as on trentmick.blogspot.com
@@ -18,14 +39,19 @@
     - what is the impact on this on my Mozilla Planet inclusion?!
     - can this do category feeds? might need to manually do that with liquid
 - analytics
-- turn lsi and pygments back on
+- turn pygments back on?
 - category/tag listings: try to do this on the index page. ideas:
     - a "by tag" listing, then can just link to an anchor on that page
     - JS to filter the list down by tag
 - plan the switch, <link> for feedburner
 - if want archives, see http://github.com/henrik/jekyll
   and http://henrik.nyh.se/2009/04/jekyll
+  or https://github.com/metajack/metajack.im/blob/master/archive/index.html
 - why doesn't my 404.html take for other than /404.html and /404 ?
+
+# typography nerd
+
+- use '§' for section links rather than '#' ?
 
 # lower prio
 

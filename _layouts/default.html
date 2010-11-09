@@ -40,54 +40,8 @@
 <!--[if (gt IE 9)|!(IE)]><!--> <body> <!--<![endif]-->
 
 
-<style>
-
-
-/* XXX */
-#header {
-  position: relative;
-  height: 100px;
-}
-#header .bar,
-#footer .bar {
-  width: 100%;
-  height: 10px;
-  background-color: #3D3D3D;
-}
-#header .box {
-  position: absolute;
-  top: 0;
-  left: -150px;
-  height: 70px;
-  width: 70px;
-  border: 10px solid #3D3D3D;
-}
-.tm {
-  /* Like:
-    Crimson Text
-    Cuprum
-    IM Fell English (rough print)
-    Lobster (heavy)
-    
-    IM Fell DW Pica: awesome for numbers, oldy worldy
-  */
-  font-family: 'IM Fell English', serif;
-  text-shadow: 6px 6px 6px #ccc;
-  font-size: 48px;
-  position: relative;
-  top: 25px;
-  left: 5px;
-}
-
-#footer {
-  margin-top: 30px;
-}
-
-</style>
-
 <div id="wrapper">
 <header id="header">
-  <div class="bar"></div>
   <div class="box"><div class="tm">tm</div></div>
 </header>
   
@@ -95,19 +49,21 @@
 {{ content }}
 </div>
   
-<footer id="footer">
-  <div class="bar"></div>
+<footer id="footer" class="clearfix">
 </footer>
 </div> <!-- end of #wrapper -->
 
 
 <!-- Grab Google CDN's jQuery. fall back to local if necessary -->
+<!-- XXX
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+-->
 <script>!window.jQuery && document.write('<script src="/js/jquery-1.4.2.min.js"><\/script>')</script>
 
 <script src="/js/plugins.js?v=1"></script>
 <script src="/js/script.js?v=1"></script>
 
+<!-- XXX
 <script type="text/javascript">
 var disqus_shortname = 'trentm';
 (function () {
@@ -116,6 +72,7 @@ var disqus_shortname = 'trentm';
   (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
 }());
 </script>
+-->
 
 <!--[if lt IE 7 ]>
   <script src="/js/dd_belatedpng.js?v=1"></script>
