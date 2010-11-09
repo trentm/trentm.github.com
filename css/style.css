@@ -97,7 +97,7 @@ h2 {
 h3 {
   font-size: 21px;
   line-height: 24px;
-  margin: 24px 0 0 0;
+  margin: 24px 0 24px 0;
 }
 h4 {
   font-size: 16px;
@@ -180,6 +180,7 @@ blockquote p.hangquotes, blockquote.hangquotes {
   text-indent: -0.5em;
 }
 
+/* XXX START HERE with ul (nested), ol (nested) pre, code, kbd, dl, etc. */
 ol {
   margin: 12px 0;
   list-style-type: decimal;
@@ -188,8 +189,6 @@ ul {
   margin: 12px 0;
   /* TODO: interesting bullets: one of the decorations I found */
 }
-
-/* XXX START HERE with pre, code, kbd, dl, etc. */
 
 pre { 
   padding: 15px; 
