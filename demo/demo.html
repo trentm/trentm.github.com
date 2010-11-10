@@ -54,7 +54,6 @@ non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
 <p>Extended paragraph. <a href="">Lorem ipsum</a> dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
-<!-- XXX START HERE with pre, code, kbd, ul, ol, dl, etc. -->
 <ol>
 <li>Unus</li>
 <li>Duo</li>
@@ -81,14 +80,28 @@ ut labore et dolore magna aliqua.</p>
 <p>Lorem ipsum dolor sit amet,consectetur adipisicing elit, sed do eiusmod tempor incididunt 
 ut labore et dolore magna aliqua.</p>
 
-<pre><code>body { font:0.8125em/1.618 Arial, sans-serif; 
-background-color:#fff;  
-color:#111;
+<!-- XXX START HERE with pre, code, dl, table, etc. -->
+<pre><code>body {
+  font:0.8125em/1.618 Arial, sans-serif; 
+  background-color:#fff;  
+  color:#111;
 }</code></pre>
 
 <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
 pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit 
 anim id est laborum.</p>
+
+<pre>
+for path in _paths_from_path_patterns(path_patterns, recursive=recursive, includes=includes, excludes=excludes):
+    try:
+	fin = open(path, "rb")
+    except EnvironmentError:
+	_, ex, _ = sys.exc_info()
+	if ex.errno in (errno.ENOENT, errno.EISDIR) and islink(path):
+	    log.debug("skipped `%s': symlink" % path)
+	    continue
+	raise
+</pre>
 
 <h4>Header 4</h4>
 
@@ -185,7 +198,7 @@ ut labore et dolore magna aliqua.</p>
 	  <td>1970</td>
 	  <td>$12.00</td>
 	</tr>
-			  <tbody>
+	<tbody>
       </table>
     <p>
 I am <a href="http://devkick.com/lab/tripoli/sample.php?abc123">the a tag</a> example<br>
@@ -208,7 +221,7 @@ I am <font face="verdana">the font tag</font> example<br>
 I am <i>the i tag</i> example<br>
 I am <ins>the ins tag</ins> example<br>
 
-I am <kbd>the kbd tag</kbd> example<br>
+I am <kbd>the kbd tag</kbd> example, better: Hit <kbd>Cmd</kbd> + <kbd>S</kbd> to save.<br>
 
 I am <q>the q tag <q>inside</q> a q tag</q> example<br>
 I am <s>the s tag</s> example<br>
