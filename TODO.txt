@@ -1,3 +1,5 @@
+- http://www.avc.com/a_vc/2010/11/mobile-first-web-second-continued.html
+- http://eng.wealthfront.com/2010/11/arrhythmiajs-new-take-on-rhythm.html
 - css:
     <http://localhost:4000/2010/07/komodo-6-beta-2.html>
     font size: http://developer.yahoo.com/yui/fonts/#default
@@ -55,6 +57,7 @@
 
 # lower prio
 
+- http://lessframework.com/
 - offer a std "reply to @trentmick on Twitter", which includes enough
   info (bit.ly API?) to track ... and then show that via JS
 - play with Qunit and test/... from html5boilerplate. Qunit vs. selenium?

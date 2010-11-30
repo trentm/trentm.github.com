@@ -1,5 +1,5 @@
 /* Trent Mick's blog's CSS. Based heavily (at least initially) on
- * <http://html5boilerplate.com/>.
+ * <http://html5boilerplate.com/> and on <http://lessframework.com/>.
  */
 
 /* {{{ reset
@@ -16,7 +16,7 @@ b, i,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, figure, footer, header, 
+article, aside, figure, footer, header,
 hgroup, menu, nav, section, menu,
 time, mark, audio, video {
   margin:0;
@@ -28,7 +28,7 @@ time, mark, audio, video {
   background:transparent;
 }
 
-article, aside, figure, footer, header, 
+article, aside, figure, footer, header,
 hgroup, nav, section { display:block; }
 
 nav ul { list-style:none; }
@@ -81,7 +81,7 @@ body {
 h1,h2,h3,h4,h5,h6 {
   font-family: 'IM Fell English';
   font-weight: bold;
-  /* http://www.aestheticallyloyal.com/public/optimize-legibility/ */ 
+  /* http://www.aestheticallyloyal.com/public/optimize-legibility/ */
   text-rendering: optimizeLegibility;
 }
 h1 {
@@ -126,7 +126,7 @@ p + p {
 }
 
 
-/* #444 looks better than black: http://twitter.com/H_FJ/statuses/11800719859 */ 
+/* #444 looks better than black: http://twitter.com/H_FJ/statuses/11800719859 */
 body, select, input, textarea { color:#444; }
 
 /* maxvoltar.com/archive/-webkit-font-smoothing */
@@ -141,7 +141,7 @@ a:hover, a:active { outline: none; }
 small { font-size:85%; }
 strong, th { font-weight: bold; }
 
-td, td img { vertical-align:top; } 
+td, td img { vertical-align:top; }
 
 sub { vertical-align: sub; font-size: smaller; }
 sup { vertical-align: super; font-size: smaller; }
@@ -158,11 +158,11 @@ label, input[type=button], input[type=submit], button { cursor: pointer; }
 /* always force a scrollbar in non-IE */
 html { overflow-y: scroll; }
 
-/* make buttons play nice in IE:    
+/* make buttons play nice in IE:
    www.viget.com/inspire/styling-the-button-element-in-internet-explorer/ */
 button { width: auto; overflow: visible; }
- 
-/* bicubic resizing for non-native sized IMG: 
+
+/* bicubic resizing for non-native sized IMG:
    code.flickr.com/blog/2008/11/12/on-ui-quality-the-little-things-client-side-image-resizing/ */
 .ie7 img { -ms-interpolation-mode: bicubic; }
 
@@ -182,7 +182,7 @@ blockquote p.hangquotes, blockquote.hangquotes {
 
 /* TODO: interesting bullets: one of the decorations I found */
 ol, ul {
-  margin: 12px 0;
+  margin: 12px 24px;
 }
 ol ol, ul ul, ul ol, ol ul {
   margin-left: 24px;
@@ -200,6 +200,7 @@ pre {
   /* An alternative to overflow is pre-wrap: <http://www.pathf.com/blogs/2008/05/formatting-quoted-code-in-blog-posts-css21-white-space-pre-wrap/> */
   overflow: auto;
 }
+
 
 /* Dark key from <https://github.com/michaelhue/keyscss> */
 kbd {
@@ -231,8 +232,6 @@ kbd[title] {
   cursor: help;
 }
 
-/* XXX START HERE */
-
 /* }}} */
 
 
@@ -242,12 +241,12 @@ kbd[title] {
 
 /* Hide for both screenreaders and browsers
    css-discuss.incutio.com/wiki/Screenreader_Visibility */
-.hidden { display:none; visibility:hidden; } 
+.hidden { display:none; visibility:hidden; }
 
-/* Hide only visually, but have it available for screenreaders 
-   www.webaim.org/techniques/css/invisiblecontent/ 
+/* Hide only visually, but have it available for screenreaders
+   www.webaim.org/techniques/css/invisiblecontent/
    Solution from: j.mp/visuallyhidden - Thanks Jonathan Neal! */
-.visuallyhidden { position:absolute !important;    
+.visuallyhidden { position:absolute !important;
   clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
   clip: rect(1px, 1px, 1px, 1px); }
 
@@ -265,13 +264,14 @@ kbd[title] {
 /* {{{ layout
  * TODO: does 'margin: 0 auto' work in old enough IE? if not, switch to text-align hack
  */
+/*
 body {
   margin: 8px;
 }
 #wrapper {
   margin: 0 auto;
-  width: 650px;  
-  position: relative; 
+  width: 650px;
+  position: relative;
 }
 #main {
   min-height: 300px;
@@ -286,7 +286,7 @@ body {
     Cuprum
     IM Fell English (rough print)
     Lobster (heavy)
-    
+
     IM Fell DW Pica: awesome for numbers, oldy worldy
 #header {
   position: relative;
@@ -327,14 +327,14 @@ body {
 
   a, a:visited { color: #444 !important; text-decoration: underline; }
 
-  a:after { content: " (" attr(href) ")"; } 
+  a:after { content: " (" attr(href) ")"; }
 
   abbr:after { content: " (" attr(title) ")"; }
-  
+
   .ir a:after { content: ""; }  /* Don't show links for images */
-  
+
   pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
-  
+
   img { page-break-inside: avoid; }
 
   @page { margin: 0.5cm; }
@@ -347,21 +347,125 @@ body {
 
 
 /* {{{ Media queries for responsive design */
-@media all and (orientation:portrait) { 
+@media all and (orientation:portrait) {
   /* Style adjustments for portrait mode goes here */
-  
 }
 
-@media all and (orientation:landscape) { 
+@media all and (orientation:landscape) {
   /* Style adjustments for landscape mode goes here */
-  
 }
 
-/* Grade-A Mobile Browsers (Opera Mobile, iPhone Safari, Android Chrome)  
+/* Grade-A Mobile Browsers (Opera Mobile, iPhone Safari, Android Chrome)
    Consider this: www.cloudfour.com/css-media-query-for-mobile-is-fools-gold/ */
 @media screen and (max-device-width: 480px) {
-  
   /* Prevent iOS, WinMobile from adjusting font size */
-  html { -webkit-text-size-adjust:none; -ms-text-size-adjust:none; } 
+  html { -webkit-text-size-adjust:none; -ms-text-size-adjust:none; }
 }
+
+/* XXX START HERE
+- want to "design for mobile first"
+- that means that the 3-col layout is the default
+- problem is that IE6-IE8 will use that (lame). Add a note box at the top
+  of the page: "You are using an old IE browser. Your grand-daugther's phone
+  uses a more capable browser! Please upgrade to any of: Firefox, Chrome or,
+  if you must, IE 9."
+- Make the others use media queries.
+- Use the centered layout curr default for the 8-columns and wider (I don't
+  use that full width).
+- Use this on the wider layouts for dedented lists.
+    ol, ul {
+      margin: 12px 0;
+    }
+  But not on narrower, b/c want that room
+- less padding for 3 column layout
+*/
+
+/*  Default 8-column layout
+    60 px columns, 24 px gutters, 60 px margins, 768 px total
+    ---------------------------------------------------------
+    1     2      3      4      5      6      7      8
+    60px  144px  228px  312px  396px  480px  564px  648px   */
+
+body {
+    background: rgb(232,232,232);
+    padding: 84px 60px 0;
+    width: 648px;
+    -webkit-tap-highlight-color: rgb(255,255,0);
+}
+
+
+
+/*  13-column layout
+    60 px columns, 24 px gutters, 72 px margins, 1212 px total (extra space for scrollbars)
+    ---------------------------------------------------------------------------------------
+    1     2      3      4      5      6      7      8      9      10     11     12     13
+    60px  144px  228px  312px  396px  480px  564px  648px  732px  816px  900px  984px  1068px   */
+
+@media only screen and (min-width: 1212px) {
+    body {
+        padding: 96px 72px 0;
+        width: 1068px;
+    }
+}
+
+
+/*  5-column layout
+    60 px columns, 24 px gutters, 42 px margins, 480 px total
+    ---------------------------------------------------------
+    1     2      3      4      5
+    60px  144px  228px  312px  396px    */
+
+@media only screen and (max-width: 767px) and (min-width: 480px) {
+
+    body {
+        padding: 48px 42px 0;
+        width: 396px;
+    }
+
+    /* "overflow:auto" does NOT yield scrollbars in mobile browsers. iPhone
+     * *does* support two-finger scrolling inside the pre-block, but that
+     * is undiscoverable. Let's pre-wrap.
+     */
+    pre {
+        overflow: inherit;
+        white-space: pre;
+        white-space: -moz-pre-wrap;
+        white-space: -hp-pre-wrap;
+        white-space: -o-pre-wrap;
+        white-space: pre-wrap;
+        word-wrap: break-word;
+    }
+
+}
+
+
+/*  3-column layout
+    60 px columns, 24 px gutters, 46 px margins, 320 px total
+    ---------------------------------------------------------
+    1     2      3
+    60px  144px  228px  */
+
+@media only screen and (max-width: 479px) {
+
+    body {
+        padding: 48px 46px 0;
+        width: 228px;
+      background: orange; /* XXX*/
+    }
+
+    /* "overflow:auto" does NOT yield scrollbars in mobile browsers. iPhone
+     * *does* support two-finger scrolling inside the pre-block, but that
+     * is undiscoverable. Let's pre-wrap.
+     */
+    pre {
+        overflow: inherit;
+        white-space: pre;
+        white-space: -moz-pre-wrap;
+        white-space: -hp-pre-wrap;
+        white-space: -o-pre-wrap;
+        white-space: pre-wrap;
+        word-wrap: break-word;
+    }
+}
+
 /* }}} */
