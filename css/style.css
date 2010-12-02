@@ -58,15 +58,8 @@ input, select { vertical-align:middle; }
 
 
 
-/* {{{ base styles
- * Generally the html5boilerplate stuff is at the top; mine below.
- */
-
-/* http://yui.yahooapis.com/2.8.2r1/build/fonts/fonts.css */
-table { font-size:inherit; font:100%; }
-select, input, textarea { font:99% sans-serif; }
-
-/* A vertical rhythm: <http://webtypography.net/Rhythm_and_Proportion/Vertical_Motion/2.2.2/>
+/* {{{ vertical rhythm:
+ * <http://webtypography.net/Rhythm_and_Proportion/Vertical_Motion/2.2.2/>
  * - 24px rhythm.
  * - Typefaces I like: Crimson Text, Cuprum, IM Fell English (rough print),
  *   Lobster (heavy), IM Fell DW Pica (awesome for numbers, oldy worldy)
@@ -75,8 +68,6 @@ body {
   line-height: 24px;
   font-family: Helvetica,Verdana,Arial,sans-serif;
   font-size: 15px;
-  /*font-family: 'IM Fell English', Helvetica, Arial, sans-serif;*/
-  /*font-size: 16px;*/
 }
 h1,h2,h3,h4,h5,h6 {
   font-family: 'IM Fell English';
@@ -122,9 +113,18 @@ hr {
 }
 p + p {
   text-indent: 24px;
-  /*margin-top: 24px;*/
+  /*margin-top: 24px; /* or this */
 }
+/* }}} */
 
+
+/* {{{ other base styles
+ * Generally the html5boilerplate stuff is at the top; mine below.
+ */
+
+/* http://yui.yahooapis.com/2.8.2r1/build/fonts/fonts.css */
+table { font-size:inherit; font:100%; }
+select, input, textarea { font:99% sans-serif; }
 
 /* #444 looks better than black: http://twitter.com/H_FJ/statuses/11800719859 */
 body, select, input, textarea { color:#444; }
@@ -136,7 +136,6 @@ a, a:active, a:visited { color:#607890; }
 a:hover { color: #B24710; }
 /* Accessible focus treatment: http://people.opera.com/patrickl/experiments/keyboard/test */
 a:hover, a:active { outline: none; }
-
 
 small { font-size:85%; }
 strong, th { font-weight: bold; }
@@ -208,6 +207,7 @@ kbd {
   display: inline-block;
   min-width: 1em;
   padding: .2em .3em;
+  /* TODO: font sizing for this */
   font: normal .85em/1 "Lucida Grande", Lucida, Arial, sans-serif;
   text-align: center;
   text-decoration: none;
@@ -246,9 +246,11 @@ kbd[title] {
 /* Hide only visually, but have it available for screenreaders
    www.webaim.org/techniques/css/invisiblecontent/
    Solution from: j.mp/visuallyhidden - Thanks Jonathan Neal! */
-.visuallyhidden { position:absolute !important;
+.visuallyhidden {
+  position:absolute !important;
   clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
-  clip: rect(1px, 1px, 1px, 1px); }
+  clip: rect(1px, 1px, 1px, 1px);
+}
 
 /* Hide visually and from screenreaders, but maintain layout */
 .invisible { visibility: hidden; }
@@ -346,15 +348,6 @@ body {
 /* }}} */
 
 
-/* {{{ Media queries for responsive design */
-@media all and (orientation:portrait) {
-  /* Style adjustments for portrait mode goes here */
-}
-
-@media all and (orientation:landscape) {
-  /* Style adjustments for landscape mode goes here */
-}
-
 /* Grade-A Mobile Browsers (Opera Mobile, iPhone Safari, Android Chrome)
    Consider this: www.cloudfour.com/css-media-query-for-mobile-is-fools-gold/ */
 @media screen and (max-device-width: 480px) {
@@ -363,7 +356,6 @@ body {
 }
 
 /* XXX START HERE
-- want to "design for mobile first"
 - that means that the 3-col layout is the default
 - problem is that IE6-IE8 will use that (lame). Add a note box at the top
   of the page: "You are using an old IE browser. Your grand-daugther's phone
