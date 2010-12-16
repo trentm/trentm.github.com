@@ -64,6 +64,7 @@ body {
   line-height: 24px;
   font-family: arial,sans-serif;
   font-size: 15px;
+  /*background: url("/img/24px1.png") repeat scroll 0 0 transparent;*/
 }
 h1,h2,h3,h4,h5,h6 {
   font-family: 'IM Fell English',arial,sans-serif;
