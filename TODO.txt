@@ -1,6 +1,7 @@
 # newer
 
 blockquote
+pre, code (restore)
 dl
 table
 sub
