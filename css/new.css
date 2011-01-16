@@ -145,6 +145,7 @@ blockquote {
   font-size: 18px;
   color: #555;
   margin: 24px 15% 24px 15%;
+  margin: 24px 10% 24px 10%;
 }
 blockquote cite:before {
   content: "\2014 ";
