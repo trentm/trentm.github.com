@@ -1,7 +1,6 @@
 # newer
 
-blockquote
-pre, code (restore)
+sizing/zooming on iphone
 dl
 table
 sub
