@@ -1,6 +1,5 @@
 # newer
 
-sizing/zooming on iphone
 dl
 table
 sub
