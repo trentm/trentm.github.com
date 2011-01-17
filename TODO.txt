@@ -1,6 +1,5 @@
 # newer
 
-dl
 table
 kbd (restore)
 form et al (defer?)

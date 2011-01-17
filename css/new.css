@@ -120,6 +120,17 @@ p + p {
   padding: 0;
   /*padding-top: 24px; /* or this */
 }
+dl {
+  margin: 24px 0;
+}
+dt {
+  font-weight: bold;
+  margin-top: 24px;
+}
+dd {
+  margin: 0 0 0 48px;
+}
+
 
 
 
