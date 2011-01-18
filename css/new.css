@@ -134,6 +134,7 @@ dd {
 
 
 
+
 /* ---- layout */
 body {
   margin: 12px;
@@ -200,6 +201,24 @@ a code {
   text-decoration: underline;
 }
 
+table {
+  margin: 24px 0;
+}
+th,
+td {
+  border: solid #aaa;
+  border-width: 1px 0;
+  line-height: 23px;
+  padding: 0 12px;
+  text-align: left;
+}
+th {
+  border-style: dashed;
+  border-collapse: separate;
+}
+tbody tr:nth-child(odd) {
+  background-color: #f6f6f6;
+}
 
 
 /* TODO: interesting bullets: one of the decorations I found */
