@@ -1,8 +1,5 @@
 # newer
 
-table
-kbd (restore)
-form et al (defer?)
 review lists
 gather posts and comments
 put in posts (review styling)
