@@ -3,6 +3,7 @@
 gather posts and comments
 put in posts (review styling)
 general page style
+index page style
 comment importing (https://github.com/fastr/fastr.github.com)
 comment styling (https://github.com/fastr/fastr.github.com)
 
@@ -10,40 +11,10 @@ comment styling (https://github.com/fastr/fastr.github.com)
 
 # older
 
-- http://www.avc.com/a_vc/2010/11/mobile-first-web-second-continued.html
-- http://eng.wealthfront.com/2010/11/arrhythmiajs-new-take-on-rhythm.html
 - css:
     <http://localhost:4000/2010/07/komodo-6-beta-2.html>
     font size: http://developer.yahoo.com/yui/fonts/#default
     hN
-
-- css:
-    - use body text styles from
-      http://dailyjs.com/2010/10/11/functional-koans/ ?
-      close enough to trentmick.blogpost.com that I should
-      just start with the latter
-    - wants:
-        - h* styling (a la kd)
-        - consolas for pre/code, also pre/code styling a la kd
-        - consider that cute keyboard styling
-- fonts css section note: This is from the html5boilerplate, but I'm ditching
-  it:
-        /* {{{ fonts: based on <http://developer.yahoo.com/yui/fonts/>
-         * Notes:
-         * - http://developer.yahoo.com/yui/fonts/#default
-         * - http://yui.yahooapis.com/2.8.2r1/build/fonts/fonts.css
-         */
-        body { font:13px/1.231 sans-serif; *font-size:small; *font:x-small; }
-
-        table { font-size:inherit; font:100%; }
-
-        select, input, textarea { font:99% sans-serif; }
-
-        /* normalize monospace sizing
-         * http://en.wikipedia.org/wiki/MediaWiki_talk:Common.css/Archive_11#Teletype_style_fix_for_Chrome
-         */
-        pre, code, kbd, samp { font-family: monospace, sans-serif; }
-        /* }}} */
 - manually importing a few of my posts
     - also move associated images/files from Dropbox to here
 - importing existing comments
@@ -69,7 +40,6 @@ comment styling (https://github.com/fastr/fastr.github.com)
 
 # lower prio
 
-- http://lessframework.com/
 - offer a std "reply to @trentmick on Twitter", which includes enough
   info (bit.ly API?) to track ... and then show that via JS
 - play with Qunit and test/... from html5boilerplate. Qunit vs. selenium?
@@ -89,3 +59,9 @@ comment styling (https://github.com/fastr/fastr.github.com)
       Understand the sizing and how to use it.
       Understand why H5B had their edits.
     - read: http://www.1stwebdesigner.com/development/snippets-html5-boilerplate/
+
+# design notes
+
+- http://lessframework.com/
+- http://www.avc.com/a_vc/2010/11/mobile-first-web-second-continued.html
+- http://eng.wealthfront.com/2010/11/arrhythmiajs-new-take-on-rhythm.html
