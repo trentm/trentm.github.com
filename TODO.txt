@@ -1,11 +1,10 @@
 # newer
 
-review lists
 gather posts and comments
 put in posts (review styling)
 general page style
-comment importing
-comment styling
+comment importing (https://github.com/fastr/fastr.github.com)
+comment styling (https://github.com/fastr/fastr.github.com)
 
 
 
