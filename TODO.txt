@@ -1,16 +1,32 @@
 # newer
 
-gather posts and comments
-put in posts (review styling)
-general page style
-index page style
-comment importing (https://github.com/fastr/fastr.github.com)
-comment styling (https://github.com/fastr/fastr.github.com)
+- gather missing few posts
+    "python-markdown2 1.0.1.17": "none", 
+    "Hannah Catherine Mick": "none", 
+    "nice I heart Komodo blog post": "none", 
+    "eol.py 0.7.4 -- Python 3 support": "none", 
+    "moving this blog to blogger": "none", 
+- post page styling
+    - date
+    - "style" section below
+    - next/previous links
+- review content of each existing post
+- 'mk lint': add link check
+- index page style
+- comment importing (https://github.com/fastr/fastr.github.com)
+- comment styling (https://github.com/fastr/fastr.github.com)
+- categories in posts (e.g. http://tesoriere.com/2010/08/25/liquid-code-in-a-liquid-template-with-jekyll/, https://github.com/scottkf/tesoriere.com/blob/master/_posts/2010-08-25-liquid-code-in-a-liquid-template-with-jekyll.markdown#L9-17) 
+- recurring task to pull in old posts
 
 
+# style
+
+- <a> color is waaay too bright. See '/'.
+- heading font is picky about double quotes... need to have smart quotes
 
 # older
 
+- https://github.com/tobi/liquid/wiki/Liquid-for-Designers
 - css:
     <http://localhost:4000/2010/07/komodo-6-beta-2.html>
     font size: http://developer.yahoo.com/yui/fonts/#default

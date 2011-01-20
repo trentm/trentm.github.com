@@ -1,7 +1,7 @@
 ---
 layout: post
 title: TITLE
-published: false
+published: true
 ---
 
-blah blah blah
+CONTENT
