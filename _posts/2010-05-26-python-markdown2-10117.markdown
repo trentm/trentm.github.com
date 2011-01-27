@@ -2,6 +2,80 @@
 layout: post
 title: python-markdown2 1.0.1.17
 published: true
+categories: [python, programming, markdown]
 ---
 
-CONTENT
+<h3>Where?</h3>
+
+<ul>
+<li>Project Page: <a href="http://code.google.com/p/python-markdown2/">http://code.google.com/p/python-markdown2/</a></li>
+<li>PyPI: <a href="http://pypi.python.org/pypi/markdown2/">http://pypi.python.org/pypi/markdown2/</a></li>
+</ul>
+
+<h3>What's new?</h3>
+
+<ul>
+<li><p>[Issue 36] Fix "cuddled-lists" extra handling for an
+looks-like-a-cuddled-list-but-is-indented block. See the
+"test/tm-cases/cuddled<em>list</em>indented.text" test case.</p></li>
+<li><p>Experimental new "toc" extra. The returned string from conversion will have
+a <code>toc_html</code> attribute.</p></li>
+<li><p>New "header-ids" extra that will add an <code>id</code> attribute to headers:</p>
+
+<pre><code># My First Section
+</code></pre>
+
+<p>will become:</p>
+
+<pre><code>&lt;h1 id="my-first-section"&gt;My First Section&lt;/h1&gt;
+</code></pre>
+
+<p>An argument can be give for the extra, which will be used as a prefix for
+the ids:</p>
+
+<pre><code>$ cat foo.txt 
+# hi there
+$ python markdown2.py foo.txt 
+&lt;h1&gt;hi there&lt;/h1&gt;
+$ python markdown2.py foo.txt -x header-ids
+&lt;h1 id="hi-there"&gt;hi there&lt;/h1&gt;
+$ python markdown2.py foo.txt -x header-ids=prefix
+&lt;h1 id="prefix-hi-there"&gt;hi there&lt;/h1&gt;
+</code></pre></li>
+<li><p>Preliminary support for "html-classes" extra: takes a dict mapping HTML tag
+to the string value to use for a "class" attribute for that emitted tag.
+Currently just supports "pre" and "code" for code <em>blocks</em>.</p></li>
+</ul>
+
+<p>Full changelog: <a href="http://code.google.com/p/python-markdown2/source/browse/trunk/CHANGES.txt">http://code.google.com/p/python-markdown2/source/browse/trunk/CHANGES.txt</a></p>
+
+<h3>What is 'markdown2'?</h3>
+
+<p><code>markdown2.py</code> is a fast and complete Python implementation of
+<a href="http://daringfireball.net/projects/markdown/">Markdown</a> -- a
+text-to-HTML markup syntax.</p>
+
+<h3>Module usage</h3>
+
+<pre><code>&gt;&gt;&gt; import markdown2
+&gt;&gt;&gt; markdown2.markdown("*boo!*")  # or use `html = markdown_path(PATH)`
+u'&lt;p&gt;&lt;em&gt;boo!&lt;/em&gt;&lt;/p&gt;\n'
+
+&gt;&gt;&gt; markdowner = Markdown()
+&gt;&gt;&gt; markdowner.convert("*boo!*")
+u'&lt;p&gt;&lt;em&gt;boo!&lt;/em&gt;&lt;/p&gt;\n'
+&gt;&gt;&gt; markdowner.convert("**boom!**")
+u'&lt;p&gt;&lt;strong&gt;boom!&lt;/strong&gt;&lt;/p&gt;\n'
+</code></pre>
+
+<h3>Command line usage</h3>
+
+<pre><code>$ cat hi.markdown
+# Hello World!
+$ markdown2 hi.markdown
+&lt;h1&gt;Hello World!&lt;/h1&gt;
+</code></pre>
+
+<p>This implementation of Markdown implements the full "core" syntax plus a
+number of extras (e.g., code syntax coloring, footnotes) as described on
+<a href="http://code.google.com/p/python-markdown2/wiki/Extras">http://code.google.com/p/python-markdown2/wiki/Extras</a>.</p>

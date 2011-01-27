@@ -53,9 +53,67 @@ class lint2(Task):
         for issue in _lintpost('/Users/trentm/tm/trentm.github.com/_posts/2010-06-14-django-markdown-deux-django-app.markdown'):
             print issue
 
+class pull(Task):
+    def make(self):
+        ns = "{http://www.w3.org/2005/Atom}"
+        from xml.etree import ElementTree as ET
+        tree = ET.parse(glob(join(self.dir, "d/*.xml"))[0]).getroot()
+        marker = "python-markdown2"
+        for entry in tree:
+            title = entry.find('{http://www.w3.org/2005/Atom}title')
+            if title is not None and marker in title.text:
+                break
+        else:
+            return
+        
+        post = _post_from_blogger_entry(entry)
+        pprint(post)
+        path = join(self.dir, "_posts", post["path"])
+        codecs.open(path, 'w', 'utf-8').write("%(header)s\n%(content)s" % post)
+        print "'%s' written" % path
 
 
 #---- internal support stuff
+
+def _post_from_blogger_entry(entry):
+    ns = "{http://www.w3.org/2005/Atom}"
+    post = {}
+    post["title"] = entry.find(ns+"title").text
+    post["slug"] = _slugify(post["title"])
+    post["pub_date"] = entry.find(ns+"published").text.split("T",1)[0] 
+    post["content"] = entry.find(ns+"content").text
+    post["tags"] = []
+    for cat in entry.findall(ns+"category"):
+        if cat.get("scheme") == "http://www.blogger.com/atom/ns#":
+            post["tags"].append(cat.get("term"))
+    post["path"] = "%(pub_date)s-%(slug)s.markdown" % post
+    post["header"] = """---
+layout: post
+title: %s
+published: true
+categories: [%s]
+---
+""" % (post["title"], ', '.join(post["tags"]))
+    return post
+    
+
+## {{{ http://code.activestate.com/recipes/577257/ (r1)
+_slugify_strip_re = re.compile(r'[^\w\s-]')
+_slugify_hyphenate_re = re.compile(r'[-\s]+')
+def _slugify(value):
+    """
+    Normalizes string, converts to lowercase, removes non-alpha characters,
+    and converts spaces to hyphens.
+    
+    From Django's "django/template/defaultfilters.py".
+    """
+    import unicodedata
+    if not isinstance(value, unicode):
+        value = unicode(value)
+    value = unicodedata.normalize('NFKD', value).encode('ascii', 'ignore')
+    value = unicode(_slugify_strip_re.sub('', value).strip().lower())
+    return _slugify_hyphenate_re.sub('-', value)
+## end of http://code.activestate.com/recipes/577257/ }}}
 
 def _lintpost(path):
     content = codecs.open(path, 'r', 'utf-8').read()
