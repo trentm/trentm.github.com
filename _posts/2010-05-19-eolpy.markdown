@@ -1,0 +1,9 @@
+---
+layout: post
+title: eol.py -- a tool for working with text file end-of-line characters
+published: true
+---
+
+Just finally released `eol.py` ([on github](http://github.com/trentm/eol), [on pypi](http://pypi.python.org/pypi/eol)) -- a tool I've been using for a while to help find and convert EOLs in text files. It is a small Python module and command-line script. MIT license. Hopefully useful to others.
+
+See the notes in either link above for usage details.

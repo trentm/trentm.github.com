@@ -1,0 +1,42 @@
+---
+layout: post
+title: PyCon 2010 wrap-ups
+published: true
+---
+
+<div style="float: right; margin: 5px;">
+  <img src="https://dl.dropbox.com/u/1301040/blog/2010/03/pycon2010.png"/>
+</div>
+
+I'm back from [PyCon 2010](http://us.pycon.org/2010/about/) in Atlanta
+(actually I've been back for almost two weeks now, but I'm a lazy writer).
+PyCon, as usual, was a great time. I wrote a long wrap-up on my work blog
+here:
+
+<div style="font-size: 120%;">
+  <a href="http://blogs.activestate.com/2010/03/pycon-2010-wrap-up/">Trent's work PyCon 2010 wrap-up</a>
+</div>
+
+A couple more personal additions...
+<!-- more -->
+
+- I announced [Python Translation
+  Party](http://pythontranslationparty.appspot.com) during PyCon --
+  [here](http://trentmick.blogspot.com/2010/02/python-translation-party.html),
+  [here](http://trentmick.blogspot.com/2010/02/updated-python-translation-party-fewer.html),
+  and in a Lightning Talk (video not up yet) -- to a resounding golf clap. :)
+  It is a small site devoted to translating Python code between 2 and 3 using
+  the lib2to3 and lib3to2 libraries until "equilibrium" is found. Mostly it
+  was a fun little play with AppEngine. However, it has also resulted in a
+  few bug reports to lib3to2 and lib2to3, which is cool.
+  
+- I had a good chat with [Catherine
+  Devlin](http://catherinedevlin.blogspot.com/) about her
+  [cmd2](http://pypi.python.org/pypi/cmd2) library, because it is so similar
+  in spirit to my [cmdln](http://pypi.python.org/pypi/cmdln) library. We
+  chatted a bit about whether a merging of the two libs would be reasonable.
+  No concrete plans: busy busy.
+
+
+It was great to hook up with people that I tend to only see at PyCon.
+I look forward to PyCon next year.
