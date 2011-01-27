@@ -10,8 +10,10 @@
     - date
     - "style" section below
     - next/previous links
-- review content of each existing post
-- 'mk lint': add link check
+- review content of each existing post:
+    http://localhost:4000/2010/07/on-a-bit-of-confusion.html
+        markdown link that didn't linkify
+- 'mk lint': add link check. add smart-quote check in blockquotes as well
 - index page style
 - comment importing (https://github.com/fastr/fastr.github.com)
 - comment styling (https://github.com/fastr/fastr.github.com)
