@@ -49,7 +49,7 @@ Currently just supports "pre" and "code" for code <em>blocks</em>.</p></li>
 
 <p>Full changelog: <a href="http://code.google.com/p/python-markdown2/source/browse/trunk/CHANGES.txt">http://code.google.com/p/python-markdown2/source/browse/trunk/CHANGES.txt</a></p>
 
-<h3>What is 'markdown2'?</h3>
+<h3>What is &#8216;markdown2&#8217;?</h3>
 
 <p><code>markdown2.py</code> is a fast and complete Python implementation of
 <a href="http://daringfireball.net/projects/markdown/">Markdown</a> -- a

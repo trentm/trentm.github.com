@@ -54,18 +54,11 @@ class lint2(Task):
             print issue
 
 class pull(Task):
+    marker = "nice"
+    marker = "eol.py 0.7.4 -- Python 3 support"
+    marker = "moving this blog to blogger"
     def make(self):
-        ns = "{http://www.w3.org/2005/Atom}"
-        from xml.etree import ElementTree as ET
-        tree = ET.parse(glob(join(self.dir, "d/*.xml"))[0]).getroot()
-        marker = "python-markdown2"
-        for entry in tree:
-            title = entry.find('{http://www.w3.org/2005/Atom}title')
-            if title is not None and marker in title.text:
-                break
-        else:
-            return
-        
+        entry = _blogger_entry_from_title_marker(self.marker)
         post = _post_from_blogger_entry(entry)
         pprint(post)
         path = join(self.dir, "_posts", post["path"])
@@ -74,6 +67,15 @@ class pull(Task):
 
 
 #---- internal support stuff
+
+def _blogger_entry_from_title_marker(marker):
+    from xml.etree import ElementTree as ET
+    ns = "{http://www.w3.org/2005/Atom}"
+    tree = ET.parse(glob(join(dirname(__file__), "d/*.xml"))[0]).getroot()
+    for entry in tree:
+        title = entry.find(ns+"title")
+        if title is not None and marker in title.text:
+            return entry
 
 def _post_from_blogger_entry(entry):
     ns = "{http://www.w3.org/2005/Atom}"

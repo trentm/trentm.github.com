@@ -1,11 +1,5 @@
 # newer
 
-- gather missing few posts
-    "python-markdown2 1.0.1.17": "none", 
-    "Hannah Catherine Mick": "none", 
-    "nice I heart Komodo blog post": "none", 
-    "eol.py 0.7.4 -- Python 3 support": "none", 
-    "moving this blog to blogger": "none", 
 - post page styling
     - date
     - "style" section below
