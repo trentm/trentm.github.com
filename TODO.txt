@@ -1,18 +1,25 @@
 # newer
 
-- post page styling
-    - date
-    - "style" section below
-    - next/previous links
 - review content of each existing post:
     http://localhost:4000/2010/07/on-a-bit-of-confusion.html
         markdown link that didn't linkify
+    http://localhost:4000/2009/06/pleasant-things-work-better.html
+        missing Miro icon
+        compare to http://trentmick.blogspot.com/2009/06/pleasant-things-work-better_9069.html
 - 'mk lint': add link check. add smart-quote check in blockquotes as well
-- index page style
+  markdown footnotes. list other markdown-ification features that liquid might not have.
+- default page style:
+    - top nav (name, perhaps don't have)
+    - drop bookmark (TM)
+    - next/previous links to top nav bar?
+    - "style" section below
+    - footer? work, js badge, search, other links, picture, bia
+- index page style: "ul.posts", etc.
 - comment importing (https://github.com/fastr/fastr.github.com)
 - comment styling (https://github.com/fastr/fastr.github.com)
 - categories in posts (e.g. http://tesoriere.com/2010/08/25/liquid-code-in-a-liquid-template-with-jekyll/, https://github.com/scottkf/tesoriere.com/blob/master/_posts/2010-08-25-liquid-code-in-a-liquid-template-with-jekyll.markdown#L9-17) 
-- recurring task to pull in old posts
+- gather back all tags from blogger dump
+- recurring task to pull in old posts (mk pull)
 
 
 # style
@@ -20,16 +27,13 @@
 - <a> color is waaay too bright. See '/'.
 - heading font is picky about double quotes... need to have smart quotes
 - `pre:first-child { less margin-top }` e.g. http://localhost:4000/2010/05/python-markdown2-10117.html
+- want "Related Posts" to not look like part of the post. Full width background with light border possible?
+
 
 # older
 
 - https://github.com/tobi/liquid/wiki/Liquid-for-Designers
-- css:
-    <http://localhost:4000/2010/07/komodo-6-beta-2.html>
-    font size: http://developer.yahoo.com/yui/fonts/#default
-    hN
-- manually importing a few of my posts
-    - also move associated images/files from Dropbox to here
+- move associated images/files from Dropbox to here
 - importing existing comments
 - thinking about redirects: use permalink front matter to get the same
   URLs for all previous posts as on trentmick.blogspot.com

@@ -1,16 +1,16 @@
 ---
 layout: post
-title: pleasant things work better
+title: Pleasant things work better
 published: true
 ---
-
-# Pleasant things work better
 
 I watched [Don Norman's TED Talk "3 ways good design makes you
 happy"](http://www.ted.com/index.php/talks/don_norman_on_design_and_emotion.html)
 last night:
 
+<div>
 <object width="446" height="326"><param name="movie" value="http://video.ted.com/assets/player/swf/EmbedPlayer.swf"></param><param name="allowFullScreen" value="true" /><param name="wmode" value="transparent"></param><param name="bgColor" value="#ffffff"></param> <param name="flashvars" value="vu=http://video.ted.com/talks/embed/DonNorman_2003-embed_high.flv&su=http://images.ted.com/images/ted/tedindex/embed-posters/DonNorman-2003.embed_thumbnail.jpg&vw=432&vh=240&ap=0&ti=480" /><embed src="http://video.ted.com/assets/player/swf/EmbedPlayer.swf" pluginspace="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" wmode="transparent" bgColor="#ffffff" width="446" height="326" allowFullScreen="true" flashvars="vu=http://video.ted.com/talks/embed/DonNorman_2003-embed_high.flv&su=http://images.ted.com/images/ted/tedindex/embed-posters/DonNorman-2003.embed_thumbnail.jpg&vw=432&vh=240&ap=0&ti=480"></embed></object>
+</div>
 
 This part of his talk really stuck out for me (transcription errors mine):
 

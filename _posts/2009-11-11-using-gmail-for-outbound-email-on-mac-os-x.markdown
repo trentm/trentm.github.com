@@ -1,10 +1,8 @@
 ---
 layout: post
-title: using gmail for outbound email on Mac OS X
+title: Using gmail for outbound email on Mac OS X
 published: true
 ---
-
-# Using gmail for outbound email on Mac OS X
 
 At work I run a number of cron jobs: web log analysis scripts, metrics
 gathering, db migration for beta versions of some sites, etc. However, one

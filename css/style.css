@@ -237,6 +237,27 @@ ul ul { list-style-type: disc; }
 ul ul ul { list-style-type: circle; }
 
 
+/*---- blog post page elements */
+
+.post #date {
+  color: #777;
+  font-family: 'IM Fell English',Georgia,serif;
+  font-size: 110%;
+  margin: -12px 0 24px 0;
+}
+.post #prevnext {
+  float: right;
+  color: #777;
+  font-family: 'IM Fell English',Georgia,serif;
+  font-size: 80%;
+}
+.post #tags {
+  color: #777;
+  font-family: 'IM Fell English',Georgia,serif;
+  font-size: 110%;
+  margin: 24px 0;
+}
+
 
 /* ---- larger screens */
 
