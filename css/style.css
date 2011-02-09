@@ -64,8 +64,8 @@ input, select { vertical-align:middle; }
 }
 body {
   line-height: 24px;
-  font-family: arial,sans-serif;
-  font-size: 15px;
+  font-family: helvetica, arial, freesans, clean, sans-serif;
+  font-size: 16px;
 }
 h1,h2,h3,h4,h5,h6 {
   font-family: 'IM Fell English',Georgia,serif;
