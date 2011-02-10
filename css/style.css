@@ -116,9 +116,7 @@ hr:after {
   content: "\2767";
 }
 p + p {
-  text-indent: 24px;
-  padding: 0;
-  /*padding-top: 24px; /* or this */
+  padding-top: 24px;
 }
 dl {
   margin: 24px 0;
@@ -134,6 +132,7 @@ dd {
 
 
 /* ---- layout */
+
 body {
   margin: 12px;
 }
@@ -255,6 +254,29 @@ ul ul ul { list-style-type: circle; }
   font-size: 110%;
   margin: 24px 0;
 }
+
+
+/* ---- custom classes */
+
+img.left100, img.left150, img.left200 {
+  float: left;
+}
+img.right100, img.right150, img.right200 {
+  float: right;
+}
+@media only screen and (min-width: 900px) {
+  img.left100 { margin-left: -100px; }
+  img.right100 { margin-right: -100px; }
+}
+@media only screen and (min-width: 975px) {
+  img.left150 { margin-left: -150px; }
+  img.right150 { margin-right: -150px; }
+}
+@media only screen and (min-width: 1025px) {
+  img.left200 { margin-left: -200px; }
+  img.right200 { margin-right: -200px; }
+}
+
 
 
 /* ---- branding */
