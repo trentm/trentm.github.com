@@ -224,7 +224,6 @@ tbody tr:nth-child(odd) {
   background-color: #f6f6f6;
 }
 
-
 ol, ul {
   padding: 12px 0;
   margin: 0 0 0 24px;
@@ -239,6 +238,11 @@ ol ol ol ol { list-style-type: lower-roman; }
 ul { list-style-type: circle; }
 ul ul { list-style-type: disc; }
 ul ul ul { list-style-type: circle; }
+
+:link { color: hsl(206, 100%, 23%); }
+:visited { color: hsl(240, 20%, 50%); }
+:link:hover, :visited:hover { color: hsl(206, 100%, 38%); }
+
 
 
 /*---- blog post page elements */

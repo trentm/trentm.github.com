@@ -17,7 +17,6 @@
 
 # style
 
-- <a> color is waaay too bright. See '/'.
 - heading font is picky about double quotes... need to have smart quotes
 
 
