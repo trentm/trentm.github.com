@@ -3,15 +3,14 @@
 - 'mk lint': add link check. add smart-quote check in blockquotes as well
   markdown footnotes. list other markdown-ification features that liquid might not have.
 - default page style:
-    - top nav (name, perhaps don't have)
-    - drop bookmark (TM)
     - next/previous links to top nav bar?
     - "style" section below
-    - footer? work, js badge, search, other links, picture, bia
+    - footer: work, js badge, search, other links, picture, bio
 - comment importing (https://github.com/fastr/fastr.github.com)
 - comment styling (https://github.com/fastr/fastr.github.com)
 - categories in posts (e.g. http://tesoriere.com/2010/08/25/liquid-code-in-a-liquid-template-with-jekyll/, https://github.com/scottkf/tesoriere.com/blob/master/_posts/2010-08-25-liquid-code-in-a-liquid-template-with-jekyll.markdown#L9-17) 
 - gather back all tags from blogger dump
+- tag/category pages
 - recurring task to pull in old posts (mk pull)
 
 
