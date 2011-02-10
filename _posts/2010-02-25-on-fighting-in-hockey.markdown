@@ -12,9 +12,8 @@ pales. A full-field punt return in football doesn't come close. Basketball,
 soccer and rugby have continuous play, as well. Perhaps I prefer hockey because
 of the speed you don't get in the others. Undoubhtedly part of it is the
 general love for hockey in Canada. Perhaps part of it is the physicalness. And
-here is where there is a problem [^1].
-
-[^1]: At least in the NHL and the Canadian minor leagues (WHL, OHL, et al) that I'm exposed to.
+here is where there is a problem -- at least in the NHL and the Canadian minor
+leagues (WHL, OHL, et al) that I'm exposed to.
 
 By "physicalness" I mean cleanly knocking a player off the puck, a defenceman
 rubbing a charging forward out on the boards, the battle for positioning in

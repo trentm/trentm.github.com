@@ -1,7 +1,5 @@
 # newer
 
-- review content of each existing post:
-    starting at http://localhost:4000/2010/07/eolpy-074-python-3-support.html
 - 'mk lint': add link check. add smart-quote check in blockquotes as well
   markdown footnotes. list other markdown-ification features that liquid might not have.
 - default page style:

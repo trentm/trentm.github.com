@@ -264,12 +264,14 @@ ul ul ul { list-style-type: circle; }
 
 
 /* ---- custom classes */
-
+    
 img.left100, img.left150, img.left200 {
   float: left;
+  margin: 0 10px 0 0;
 }
 img.right100, img.right150, img.right200 {
   float: right;
+  margin: 0 0 0 10px;
 }
 @media only screen and (min-width: 900px) {
   img.left100 { margin-left: -100px; }
@@ -279,7 +281,7 @@ img.right100, img.right150, img.right200 {
   img.left150 { margin-left: -150px; }
   img.right150 { margin-right: -150px; }
 }
-@media only screen and (min-width: 1025px) {
+@media only screen and (min-width: 1050px) {
   img.left200 { margin-left: -200px; }
   img.right200 { margin-right: -200px; }
 }

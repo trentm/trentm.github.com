@@ -21,15 +21,11 @@ some sort of unexpected error in translating either way. The "boom" section of
 the ["Crash other parties"
 page](http://pythontranslationparty.appspot.com/crash/) before:
 
-<div>
-<img src="https://dl.dropbox.com/u/1301040/blog/2010/02/party_crash_before.png"/>
-</div>
+<p><img src="https://dl.dropbox.com/u/1301040/blog/2010/02/party_crash_before.png"/></p>
 
 and after:
 
-<div>
-<img src="https://dl.dropbox.com/u/1301040/blog/2010/02/party_crash_after.png"/>
-</div>
+<p><img src="https://dl.dropbox.com/u/1301040/blog/2010/02/party_crash_after.png"/></p>
 
 One boom remains. I'll have to dig in to see if this is a lib3to2 bug, lib2to3
 bug, or party bug.

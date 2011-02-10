@@ -6,7 +6,7 @@ published: true
 
 At work I run a number of cron jobs: web log analysis scripts, metrics
 gathering, db migration for beta versions of some sites, etc. However, one
-thing I've been unable to use effectively on my Mac machines [^1] is
+thing I've been unable to use effectively on my Mac machines is
 the `MAILTO` facility of cron. Given a foo.cron script like this:
 
     #!/bin/sh
@@ -94,8 +94,3 @@ separate Gmail account with a different password to use for this.
 
 One of the beauties of this setup is that there is a record of all the emails
 that have been sent this way in that Gmail account's "Sent mail".
-
-
-
-[^1]: I have a Macbook that is my main machine and a Mac Pro that is used for running most of our Komodo builds and some of the heavy log analysis scripts that I run.
-

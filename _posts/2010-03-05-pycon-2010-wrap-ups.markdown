@@ -4,18 +4,18 @@ title: PyCon 2010 wrap-ups
 published: true
 ---
 
+<!--
 <div style="float: right; margin: 5px;">
-  <img src="https://dl.dropbox.com/u/1301040/blog/2010/03/pycon2010.png"/>
 </div>
+  -->
 
+<img src="https://dl.dropbox.com/u/1301040/blog/2010/03/pycon2010.png" class="right150"/>
 I'm back from [PyCon 2010](http://us.pycon.org/2010/about/) in Atlanta
 (actually I've been back for almost two weeks now, but I'm a lazy writer).
 PyCon, as usual, was a great time. I wrote a long wrap-up on my work blog
 here:
 
-<div style="font-size: 120%;">
-  <a href="http://blogs.activestate.com/2010/03/pycon-2010-wrap-up/">Trent's work PyCon 2010 wrap-up</a>
-</div>
+<p><a href="http://blogs.activestate.com/2010/03/pycon-2010-wrap-up/">Trent's work PyCon 2010 wrap-up</a></p>
 
 A couple more personal additions...
 <!-- more -->
