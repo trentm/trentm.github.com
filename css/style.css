@@ -257,7 +257,7 @@ ul ul ul { list-style-type: circle; }
 }
 
 
-/*---- branding */
+/* ---- branding */
 
 #logo div {
   font-family: 'IM Fell English',Georgia,serif;
@@ -277,7 +277,40 @@ ul ul ul { list-style-type: circle; }
   background-color: white;
   width: 70px !important;
 }
+@media only screen and (min-width: 850px) {
+  #logo {
+    margin-left: -88px;
+  }
+}
 
+
+/* ---- index page */
+
+#posts {
+  margin-top: 12px;
+}
+#posts .date {
+  width: 80px;
+  white-space: nowrap;
+  text-align: right;
+  color: #777;
+  font-family: 'IM Fell English',Georgia,serif;
+}
+#posts td {
+  line-height: 24px;
+  border: none;
+}
+#posts tr {
+  background-color: white;
+}
+#posts td.first {
+  padding: 0;
+}
+@media only screen and (min-width: 850px) {
+  #posts {
+    margin-left: -92px;
+  }
+}
 
 
 /* ---- larger screens */
@@ -287,13 +320,6 @@ ul ul ul { list-style-type: circle; }
     overflow: auto;
     white-space: pre;
     word-wrap: normal;
-  }
-}
-
-/* Q: is 750px valid here? or need to be in '700px' bucket? */
-@media only screen and (min-width: 750px) {
-  #logo {
-    margin-left: -88px;
   }
 }
 

@@ -3,19 +3,21 @@ layout: default
 title: Trent Mick
 ---
 
-<div id="notice" style="border: 1px solid #aaa; padding: 3px 10px; background-color: #FFB77C; text-align: center;">
+<div id="notice" style="margin-top: 20px; border: 1px solid #AA670B; padding: 3px 10px; background-color: #FFB77C; text-align: center;">
   I'm reworking this site. Please <a href="http://trentmick.blogspot.com/">visit my blog here</a>.
 </div>
 
 <div id="home">
-  <h1>blog posts</h1>
-  <ul class="posts">
+  <h2>blog posts</h2>
+  <table id="posts">
+  <tbody>
     {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+      <tr><td class="date first">{{ post.date | date_to_string }}</td><td><a href="{{ post.url }}">{{ post.title }}</a></td></tr>
     {% endfor %}
-  </ul>
+  </tbody>
+  </table>
 
-  <h1>projects I work on</h1>
+  <h2>projects I work on</h2>
   <ul>
     <li>... TODO</li>
   </ul>
