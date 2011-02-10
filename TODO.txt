@@ -1,6 +1,7 @@
 # newer
 
-- review content of each existing post
+- review content of each existing post:
+    starting at http://localhost:4000/2010/07/eolpy-074-python-3-support.html
 - 'mk lint': add link check. add smart-quote check in blockquotes as well
   markdown footnotes. list other markdown-ification features that liquid might not have.
 - default page style:
@@ -20,8 +21,6 @@
 
 - <a> color is waaay too bright. See '/'.
 - heading font is picky about double quotes... need to have smart quotes
-- `pre:first-child { less margin-top }` e.g. http://localhost:4000/2010/05/python-markdown2-10117.html
-- want "Related Posts" to not look like part of the post. Full width background with light border possible?
 
 
 # older

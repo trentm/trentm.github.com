@@ -197,6 +197,14 @@ pre code  {
 a code {
   text-decoration: underline;
 }
+h1 + pre,
+h2 + pre,
+h3 + pre,
+h4 + pre,
+h5 + pre,
+h6 + pre {
+  margin-top: 0;
+}
 
 table {
   margin: 24px 0;
@@ -210,7 +218,6 @@ td {
   text-align: left;
 }
 th {
-  border-style: dashed;
   border-collapse: separate;
 }
 tbody tr:nth-child(odd) {
