@@ -1,73 +1,46 @@
-# newer
+# high prio
 
-- 'mk lint': add link check. add smart-quote check in blockquotes as well
-  markdown footnotes. list other markdown-ification features that liquid might not have.
 - default page style:
     - next/previous links to top nav bar?
     - "style" section below
     - footer: work, js badge, search, other links, picture, bio
 - comment importing (https://github.com/fastr/fastr.github.com)
 - comment styling (https://github.com/fastr/fastr.github.com)
-- categories in posts (e.g. http://tesoriere.com/2010/08/25/liquid-code-in-a-liquid-template-with-jekyll/, https://github.com/scottkf/tesoriere.com/blob/master/_posts/2010-08-25-liquid-code-in-a-liquid-template-with-jekyll.markdown#L9-17) 
 - gather back all tags from blogger dump
-- tag/category pages
-- recurring task to pull in old posts (mk pull)
-
-
-# style
-
-- heading font is picky about double quotes... need to have smart quotes
-
-
-# older
-
-- https://github.com/tobi/liquid/wiki/Liquid-for-Designers
-- move associated images/files from Dropbox to here
-- importing existing comments
 - thinking about redirects: use permalink front matter to get the same
   URLs for all previous posts as on trentmick.blogspot.com
-- tags -> categories
-    - what is the impact on this on my Mozilla Planet inclusion?!
-    - can this do category feeds? might need to manually do that with liquid
-- analytics
-- turn pygments back on?
-- category/tag listings: try to do this on the index page. ideas:
-    - a "by tag" listing, then can just link to an anchor on that page
-    - JS to filter the list down by tag
+- tag/category pages
+- recurring task to pull in old posts (mk pull)
 - plan the switch, <link> for feedburner
-- if want archives, see http://github.com/henrik/jekyll
-  and http://henrik.nyh.se/2009/04/jekyll
-  or https://github.com/metajack/metajack.im/blob/master/archive/index.html
-- why doesn't my 404.html take for other than /404.html and /404 ?
 
-# typography nerd
-
-- use '§' for section links rather than '#' ?
 
 # lower prio
 
+- categories:
+    - categories in posts (e.g. http://tesoriere.com/2010/08/25/liquid-code-in-a-liquid-template-with-jekyll/, https://github.com/scottkf/tesoriere.com/blob/master/_posts/2010-08-25-liquid-code-in-a-liquid-template-with-jekyll.markdown#L9-17) 
+    - category/tag listings: try to do this on the index page. ideas:
+        - a "by tag" listing, then can just link to an anchor on that page
+        - JS to filter the list down by tag
+    - what is the impact on this on my Mozilla Planet inclusion?!
+    - can this do category feeds? might need to manually do that with liquid
+- if want archives, see http://github.com/henrik/jekyll
+  and http://henrik.nyh.se/2009/04/jekyll
+  or https://github.com/metajack/metajack.im/blob/master/archive/index.html
+- analytics
+- move associated images/files from Dropbox to here
+- 'mk lint': add link check. add smart-quote check in blockquotes as well
+  markdown footnotes. list other markdown-ification features that liquid might not have.
 - offer a std "reply to @trentmick on Twitter", which includes enough
   info (bit.ly API?) to track ... and then show that via JS
+- typography nerd: use '§' for section links rather than '#' ?
 - play with Qunit and test/... from html5boilerplate. Qunit vs. selenium?
 - apple-touch-icon.png
 - yahoo JS profiling stuff from html5boilerplate (I've removed it)
-- learn html5boilerplate CSS:
-    - The Magnificent CLEARFIX: want example usage of this. Try in h5b site.
-    - '.ir' usage example
-    - /* www.pathf.com/blogs/2008/05/formatting-quoted-code-in-blog-posts-css21-white-space-pre-wrap/ */
-      The post styling is out of date, so play around with it a bit.
-    - "fonts.css from the YUI Library: developer.yahoo.com/yui/
-      Please refer to developer.yahoo.com/yui/fonts/ for font sizing percentages
-      ...
-        * remove arial, helvetica from explicit font stack
-        * make the line-height relative and unit-less
-        * remove the pre, code styles"
-      Understand the sizing and how to use it.
-      Understand why H5B had their edits.
-    - read: http://www.1stwebdesigner.com/development/snippets-html5-boilerplate/
 
-# design notes
 
+# links
+
+- https://github.com/tobi/liquid/wiki/Liquid-for-Designers
 - http://lessframework.com/
 - http://www.avc.com/a_vc/2010/11/mobile-first-web-second-continued.html
 - http://eng.wealthfront.com/2010/11/arrhythmiajs-new-take-on-rhythm.html
