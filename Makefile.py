@@ -26,6 +26,11 @@ class feeds(Task):
         print "http://localhost:4000/atom.xml"
         print "http://www.blogger.com/feeds/1552913144533093368/posts/default"
 
+class devserver(Task):
+    """run local Jekyll devserver"""
+    def make(self):
+        os.system("_stuff/devserver")
+
 class lint(Task):
     """Lint the latest post (or path in POST envvar)."""
     def make(self):
@@ -64,6 +69,27 @@ class pull(Task):
         path = join(self.dir, "_posts", post["path"])
         codecs.open(path, 'w', 'utf-8').write("%(header)s\n%(content)s" % post)
         print "'%s' written" % path
+
+class gen_discus_redir(Task):
+    """Generate tmp/discus.redir for setting up Discus comment thread
+    redirects from my old blog. "URL map" here:
+        http://trentcommenttest.disqus.com/admin/tools/migrate/
+        http://trentm.disqus.com/admin/tools/migrate/
+    """
+    input = "redirect.json"
+    output = "_tmp/discus.redirect"
+    def make(self):
+        import json
+        import csv
+        redirect = json.load(open(join(self.dir, self.input)))
+        foutput = open(join(self.dir, self.output), 'w')
+        try:
+            writer = csv.writer(foutput)
+            for r in redirect[:3]:
+                writer.writerow(r[1:])
+        finally:
+            foutput.close()
+            self.log.info("'%s' created", self.output)
 
 
 #---- internal support stuff
