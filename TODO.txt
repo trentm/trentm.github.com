@@ -1,49 +1,23 @@
-# comment setup and import
-
-Working through the comment migration instructions from
-    https://github.com/alexrothenberg/alexrothenberg.github.com/blob/master/_posts/2011-01-27-moved-blog-to-jekyll-and-github-pages.md
-using this test disqus forum:
-    http://trentcommenttest.disqus.com/admin/tools/migrate/
-
-Next I need a URL mapping for all old posts, so:
-
-* get a list of all old blogspot post URLs
-* get the url for the new ones
-- test migrating just those ones (leave one or two off) and ensure that the
-  missing back posts are okay
-- if so, proceed
-- test that doing a migration with one more post works
-- write notes on how to add the other posts later:
-    - add new GH _posts/*.html
-    - add the URL to the url mapping
-    - migration at http://trentm.disqus.com/admin/tools/migrate/
-- test site locally quickly with this forum id
-- redo the above for trentm.disqus.com (the real one)
-- deploy with comments (and move on the high prio section)
-- https://github.com/fastr/fastr.github.com/blob/master/_layouts/default.html has an "async=true" thing with disqus JS block. What's that?
-
-
-## links:
-
-- https://github.com/alexrothenberg/alexrothenberg.github.com/blob/master/_posts/2011-01-27-moved-blog-to-jekyll-and-github-pages.md
-- http://docs.disqus.com/developers/universal/
-- trentcommenttest.disqus.com
-
-
 # high prio
 
 - default page style:
     - next/previous links to top nav bar?
     - "style" section below
     - footer: work, js badge, search, other links, picture, bio
-- comment importing (https://github.com/fastr/fastr.github.com)
-- comment styling (https://github.com/fastr/fastr.github.com)
 - gather back all tags from blogger dump
 - thinking about redirects: use permalink front matter to get the same
   URLs for all previous posts as on trentmick.blogspot.com
 - tag/category pages
 - recurring task to pull in old posts (mk pull)
 - plan the switch, <link> for feedburner
+
+# How to migration more post comments in disqus
+
+- add new GH _posts/*.html
+- add URL to redirect.json
+- `mk gen_discus_redir`
+- migration at http://trentm.disqus.com/admin/tools/migrate/
+
 
 
 # lower prio
@@ -76,3 +50,5 @@ Next I need a URL mapping for all old posts, so:
 - http://lessframework.com/
 - http://www.avc.com/a_vc/2010/11/mobile-first-web-second-continued.html
 - http://eng.wealthfront.com/2010/11/arrhythmiajs-new-take-on-rhythm.html
+- https://github.com/alexrothenberg/alexrothenberg.github.com/blob/master/_posts/2011-01-27-moved-blog-to-jekyll-and-github-pages.md
+- http://docs.disqus.com/developers/universal/

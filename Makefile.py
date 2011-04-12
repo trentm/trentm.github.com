@@ -85,8 +85,9 @@ class gen_discus_redir(Task):
         foutput = open(join(self.dir, self.output), 'w')
         try:
             writer = csv.writer(foutput)
-            for r in redirect[:3]:
-                writer.writerow(r[1:])
+            for r in redirect:
+                if r[-1] is not None:
+                    writer.writerow(r[1:])
         finally:
             foutput.close()
             self.log.info("'%s' created", self.output)
