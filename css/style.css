@@ -311,24 +311,6 @@ img.right100, img.right150, img.right200 {
 
 /* ---- branding */
 
-#logo div {
-  font-family: 'IM Fell English',Georgia,serif;
-  font-size: 28px;
-  border: 3px solid black;
-  display: inline-block;
-  text-align: center;
-  padding: 8px 5px 5px 5px;
-}
-#logo div.white {
-  color: white;
-  background-color: black;
-  width: 70px;
-}
-#logo div.black {
-  color: black;
-  background-color: white;
-  width: 70px !important;
-}
 @media only screen and (min-width: 850px) {
   #logo {
     margin-left: -88px;

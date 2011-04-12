@@ -4,6 +4,7 @@
     - next/previous links to top nav bar?
     - "style" section below
     - footer: work, js badge, search, other links, picture, bio
+    - logo as image
 - gather back all tags from blogger dump
 - thinking about redirects: use permalink front matter to get the same
   URLs for all previous posts as on trentmick.blogspot.com
