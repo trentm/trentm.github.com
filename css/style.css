@@ -267,6 +267,23 @@ ul ul ul { list-style-type: circle; }
 }
 
 
+#comments #dsq-global-toolbar,
+#dsq-comments-title,
+.dsq-options,
+a.dsq-brlink,
+.dsq-like,
+.dsq-comment-footer-reply {
+  display: none !important;
+}
+/*#comments #dsq-comments-title {
+  display: none !important;
+}*/
+.dsq-full-comment {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+
 /* ---- custom classes */
     
 img.left100, img.left150, img.left200 {
