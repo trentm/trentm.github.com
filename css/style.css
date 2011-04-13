@@ -324,6 +324,17 @@ hr.strong:after {
   content: none;
 }
 
+a.promotejs {
+  display: none;
+  position: absolute;
+  right: -180px;
+}
+@media only screen and (min-width: 1050px) {
+  a.promotejs {
+    display: inherit;
+  }
+}
+
 
 /* ---- branding */
 
@@ -331,6 +342,40 @@ hr.strong:after {
   #logo {
     margin-left: -88px;
   }
+}
+
+#footerfullwidth {
+  border-top: 6px solid #fdf6e3;
+  height: 200px;
+  margin: 24px -12px -12px -12px;
+  background: -moz-linear-gradient(top, #eee8d5, #fdf6e3); /* for firefox 3.6+ */ 
+  background: -webkit-gradient(linear, left top, left bottom, from(#eee8d5), to(#fdf6e3));
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#eee8d5', endColorstr='#fdf6e3'); /* for IE */
+}
+#footerwrapper {
+  margin: 0 12px;
+}
+#footer {
+  margin: 12px auto;
+  max-width: 650px;
+  color: #657b83; /* base00 */
+  font-size: 90%;
+}
+#footer td {
+  vertical-align: top;
+}
+#footer table {
+  margin: 0;
+}
+#footer th,
+#footer td {
+  border: none;
+  line-height: 24px;
+  padding: 0;
+  text-align: left;
+}
+#footer tr {
+  background-color: inherit;
 }
 
 

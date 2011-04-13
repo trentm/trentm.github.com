@@ -2,7 +2,7 @@
 
 - default page style:
     - "style" section below
-    - footer: work, js badge, search, other links, picture, bio
+    - footer: search
 - gather back all tags from blogger dump
 - thinking about redirects: use permalink front matter to get the same
   URLs for all previous posts as on trentmick.blogspot.com
@@ -20,6 +20,7 @@
 
 # style
 
+- recolor: https://github.com/altercation/solarized
 - tweet thing a la http://mir.aculo.us/2011/04/11/i-for-one-welcome-our-new-micro-framework-overlords/
 - better rendered logo image for small screen
 
