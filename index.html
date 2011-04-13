@@ -9,7 +9,7 @@ title: Trent Mick
 
 <div id="home">
   <h2>blog posts</h2>
-  <table id="posts">
+  <table id="posts" class="posts">
   <tbody>
     {% for post in site.posts %}
       <tr><td class="date first">{{ post.date | date_to_string }}</td><td><a href="{{ post.url }}">{{ post.title }}</a></td></tr>

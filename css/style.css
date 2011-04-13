@@ -327,28 +327,28 @@ hr.strong:after {
 
 /* ---- index page */
 
-#posts {
+table.posts {
   margin-top: 12px;
 }
-#posts .date {
+table.posts .date {
   width: 80px;
   white-space: nowrap;
   text-align: right;
   color: #777;
   font-family: 'IM Fell English',Georgia,serif;
 }
-#posts td {
+table.posts td {
   line-height: 24px;
   border: none;
 }
-#posts tr {
+table.posts tr {
   background-color: white;
 }
-#posts td.first {
+table.posts td.first {
   padding: 0;
 }
 @media only screen and (min-width: 850px) {
-  #posts {
+  table.posts {
     margin-left: -92px;
   }
 }
