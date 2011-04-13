@@ -318,11 +318,10 @@ img.right100, img.right150, img.right200 {
 }
 
 hr.strong {
-  letter-spacing: 0.175em; /* To get smooth joining of \23AF's. */
-  text-shadow: 0px 1px 3px #aaa;
+  background: url(/img/hr_strong.png) no-repeat center;
 }
 hr.strong:after {
-  content: "\23AF\23AF\23AF\23AF   \2767   \23AF\23AF\23AF\23AF";
+  content: none;
 }
 
 
