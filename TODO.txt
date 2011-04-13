@@ -1,7 +1,6 @@
 # high prio
 
 - default page style:
-    - next/previous links to top nav bar?
     - "style" section below
     - footer: work, js badge, search, other links, picture, bio
 - gather back all tags from blogger dump

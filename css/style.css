@@ -253,17 +253,27 @@ ul ul ul { list-style-type: circle; }
   font-size: 110%;
   margin: -12px 0 24px 0;
 }
-.post #prevnext {
-  float: right;
-  color: #777;
-  font-family: 'IM Fell English',Georgia,serif;
-  font-size: 80%;
-}
 .post #tags {
   color: #777;
   font-family: 'IM Fell English',Georgia,serif;
   font-size: 110%;
   margin: 24px 0;
+}
+
+#prevnext {
+  font-family: 'IM Fell English',Georgia,serif;
+  font-size: 48px !important;
+  color: #777;
+  position: absolute;
+  top: 0px;
+  right: 10px;
+}
+#prevnext a {
+  text-decoration: none;
+  color: black;
+}
+#prevnext a:hover {
+  color: hsl(206, 100%, 38%);
 }
 
 
