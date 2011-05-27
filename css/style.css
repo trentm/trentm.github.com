@@ -295,7 +295,7 @@ a.dsq-brlink,
 
 
 /* ---- custom classes */
-    
+
 img.left100, img.left150, img.left200 {
   float: left;
   margin: 0 10px 0 0;
@@ -338,6 +338,10 @@ a.promotejs {
 
 /* ---- branding */
 
+body {
+  background: #f0f0f0 url(/img/tile.png) repeat;
+}
+
 @media only screen and (min-width: 850px) {
   #logo {
     margin-left: -88px;
@@ -345,37 +349,47 @@ a.promotejs {
 }
 
 #footerfullwidth {
-  border-top: 6px solid #fdf6e3;
-  height: 200px;
+  height: 200px;  /* Height to capture floats. Tall enough for two rows. */
+  border-top: 1px solid #ccc;
   margin: 24px -12px -12px -12px;
-  background: -moz-linear-gradient(top, #eee8d5, #fdf6e3); /* for firefox 3.6+ */ 
-  background: -webkit-gradient(linear, left top, left bottom, from(#eee8d5), to(#fdf6e3));
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#eee8d5', endColorstr='#fdf6e3'); /* for IE */
+  background-color: white;
+  -moz-box-shadow: 0px -1px 4px #c8c8c8;
+  -webkit-box-shadow: 0px -1px 4px #c8c8c8;
+  box-shadow: 0px -1px 4px #c8c8c8;
+}
+@media only screen and (min-width: 620px) {
+  #footerfullwidth {
+    height: 110px; /* Just one row footer on wider screens. */
+  }
 }
 #footerwrapper {
   margin: 0 12px;
 }
 #footer {
-  margin: 12px auto;
+  margin: 0px auto;
   max-width: 650px;
-  color: #657b83; /* base00 */
+  color: #888;
   font-size: 90%;
 }
-#footer td {
-  vertical-align: top;
+.footercol1 {
+  float: left;
+  height: 80px;
+  margin: 12px 24px 12px 0;
 }
-#footer table {
-  margin: 0;
+.footercol2 {
+  margin: 12px 24px 12px 0;
+  float: left;
+  height: 80px;
 }
-#footer th,
-#footer td {
-  border: none;
-  line-height: 24px;
-  padding: 0;
-  text-align: left;
+.footercol3 {
+  margin: 12px 0 12px 0;
+  float: left;
+  max-width: 300px;
+  min-width: 200px;
 }
-#footer tr {
-  background-color: inherit;
+img.gravatar {
+  border: 2px solid #ccc;
+  padding: 2px;
 }
 
 
@@ -396,7 +410,7 @@ table.posts td {
   border: none;
 }
 table.posts tr {
-  background-color: white;
+  background-color: transparent;
 }
 table.posts td.first {
   padding: 0;

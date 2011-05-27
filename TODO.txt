@@ -1,8 +1,6 @@
 # high prio
 
-- default page style:
-    - "style" section below
-    - footer: search
+- footer: search
 - gather back all tags from blogger dump
 - thinking about redirects: use permalink front matter to get the same
   URLs for all previous posts as on trentmick.blogspot.com
@@ -23,12 +21,13 @@
 - recolor: https://github.com/altercation/solarized
 - tweet thing a la http://mir.aculo.us/2011/04/11/i-for-one-welcome-our-new-micro-framework-overlords/
 - better rendered logo image for small screen
+- "Kepler Light"? http://dribbble.com/shots/153899-Article-header
 
 
 # lower prio
 
 - categories:
-    - categories in posts (e.g. http://tesoriere.com/2010/08/25/liquid-code-in-a-liquid-template-with-jekyll/, https://github.com/scottkf/tesoriere.com/blob/master/_posts/2010-08-25-liquid-code-in-a-liquid-template-with-jekyll.markdown#L9-17) 
+    - categories in posts (e.g. http://tesoriere.com/2010/08/25/liquid-code-in-a-liquid-template-with-jekyll/, https://github.com/scottkf/tesoriere.com/blob/master/_posts/2010-08-25-liquid-code-in-a-liquid-template-with-jekyll.markdown#L9-17)
     - category/tag listings: try to do this on the index page. ideas:
         - a "by tag" listing, then can just link to an anchor on that page
         - JS to filter the list down by tag
