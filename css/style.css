@@ -335,6 +335,11 @@ a.promotejs {
   }
 }
 
+span.subtitle {
+  font-size: 60%;
+  color: #aaa;
+}
+
 
 /* ---- branding */
 
