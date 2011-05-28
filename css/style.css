@@ -349,8 +349,9 @@ body {
 }
 
 #footerfullwidth {
-  height: 200px;  /* Height to capture floats. Tall enough for two rows. */
+  height: 210px;  /* Height to capture floats. Tall enough for two rows. */
   border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc; /* TODO: ???, see 404 on trentm.com */
   margin: 24px -12px -12px -12px;
   background-color: white;
   -moz-box-shadow: 0px -1px 4px #c8c8c8;
@@ -359,7 +360,7 @@ body {
 }
 @media only screen and (min-width: 620px) {
   #footerfullwidth {
-    height: 110px; /* Just one row footer on wider screens. */
+    height: 120px; /* Just one row footer on wider screens. */
   }
 }
 #footerwrapper {
@@ -369,17 +370,17 @@ body {
   margin: 0px auto;
   max-width: 650px;
   color: #888;
-  font-size: 90%;
+  font-size: 80%;
 }
 .footercol1 {
   float: left;
-  height: 80px;
+  height: 90px;
   margin: 12px 24px 12px 0;
 }
 .footercol2 {
   margin: 12px 24px 12px 0;
   float: left;
-  height: 80px;
+  height: 90px;
 }
 .footercol3 {
   margin: 12px 0 12px 0;
