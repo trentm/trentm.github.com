@@ -1,9 +1,7 @@
 # high prio
 
-- gather back all tags from blogger dump
 - thinking about redirects: use permalink front matter to get the same
   URLs for all previous posts as on trentmick.blogspot.com
-- tag/category pages
 - recurring task to pull in old posts: old posts are those with 'null'
   in redirect.json. See 'mk pull'.
     - working on the existing marker (how to install mysql python)
@@ -29,6 +27,7 @@
 
 # lower prio
 
+- tag/category pages
 - site search: doesn't work on iphone!?
 - categories:
     - categories in posts (e.g. http://tesoriere.com/2010/08/25/liquid-code-in-a-liquid-template-with-jekyll/, https://github.com/scottkf/tesoriere.com/blob/master/_posts/2010-08-25-liquid-code-in-a-liquid-template-with-jekyll.markdown#L9-17)

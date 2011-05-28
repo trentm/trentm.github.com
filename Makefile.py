@@ -62,12 +62,16 @@ class pull(Task):
     marker = "nice"
     marker = "eol.py 0.7.4 -- Python 3 support"
     marker = "moving this blog to blogger"
+    marker = "How to install MySQL-python 1.2.3c1 on Mac OS X"
     def make(self):
         entry = _blogger_entry_from_title_marker(self.marker)
+        #TODO: get categories in this `post` data structure
         post = _post_from_blogger_entry(entry)
         pprint(post)
         path = join(self.dir, "_posts", post["path"])
-        codecs.open(path, 'w', 'utf-8').write("%(header)s\n%(content)s" % post)
+        if exists(path):
+            raise RuntimeError("'%s' already exists" % path)
+        #codecs.open(path, 'w', 'utf-8').write("%(header)s\n%(content)s" % post)
         print "'%s' written" % path
 
 class gen_discus_redir(Task):
@@ -92,13 +96,36 @@ class gen_discus_redir(Task):
             foutput.close()
             self.log.info("'%s' created", self.output)
 
+class gen_redir_info(Task):
+    input = "redirect.json"
+    output = "_includes/redirectinfo.json"
+    def make(self):
+        import json
+        from urlparse import urlparse
+        redirects = json.load(open(join(self.dir, self.input)))
+        info_from_path = {}
+        for date, fromurl, tourl in redirects:
+            parts = urlparse(fromurl)
+            frompath = parts[2]
+            info_from_path[frompath] = tourl and urlparse(tourl)[2]
+            #{
+            #    "date": date,
+            #    "fromurl": fromurl,
+            #    "tourl": tourl,
+            #    "topath": tourl and urlparse(tourl)[2]
+            #}
+        codecs.open(join(self.dir, self.output), 'w', 'utf-8').write(
+            json.dumps(info_from_path, indent=2))
+        self.log.info("'%s' created", self.output)
+            
+
 
 #---- internal support stuff
 
 def _blogger_entry_from_title_marker(marker):
     from xml.etree import ElementTree as ET
     ns = "{http://www.w3.org/2005/Atom}"
-    tree = ET.parse(glob(join(dirname(__file__), "d/*.xml"))[0]).getroot()
+    tree = ET.parse(glob(join(dirname(__file__), "d/blog-*.xml"))[0]).getroot()
     for entry in tree:
         title = entry.find(ns+"title")
         if title is not None and marker in title.text:
@@ -109,7 +136,7 @@ def _post_from_blogger_entry(entry):
     post = {}
     post["title"] = entry.find(ns+"title").text
     post["slug"] = _slugify(post["title"])
-    post["pub_date"] = entry.find(ns+"published").text.split("T",1)[0] 
+    post["pub_date"] = entry.find(ns+"published").text.split("T",1)[0]
     post["content"] = entry.find(ns+"content").text
     post["tags"] = []
     for cat in entry.findall(ns+"category"):
@@ -124,7 +151,7 @@ categories: [%s]
 ---
 """ % (post["title"], ', '.join(post["tags"]))
     return post
-    
+
 
 ## {{{ http://code.activestate.com/recipes/577257/ (r1)
 _slugify_strip_re = re.compile(r'[^\w\s-]')
@@ -133,7 +160,7 @@ def _slugify(value):
     """
     Normalizes string, converts to lowercase, removes non-alpha characters,
     and converts spaces to hyphens.
-    
+
     From Django's "django/template/defaultfilters.py".
     """
     import unicodedata
@@ -178,7 +205,7 @@ def _lintpost(path):
                 hit.group(0), escaped)
         else:
             yield "Liquid tag: %s  (**don't know how to escape this!**)" % s
-    
+
     _setext_h_re = re.compile(r'^(.+)[ \t]*\n(=+|-+)[ \t]*\n+', re.M)
     _atx_h_re = re.compile(r'''
         ^(\#{1,6})  # \1 = string of #'s
@@ -202,4 +229,3 @@ def _lintpost(path):
 def _get(url):
     import urllib
     return urllib.urlopen(url).read()
-    
