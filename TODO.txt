@@ -6,20 +6,18 @@
   in redirect.json. See 'mk pull'.
     - working on the existing marker (how to install mysql python)
     - #TODO: get categories in this `post` data structure
-
 - plan the switch, <link> for feedburner
 
 # How to migration more post comments in disqus
 
 - add new GH _posts/*.html
 - add URL to redirect.json
-- `mk gen_discus_redir`
+- `mk gen_discus_redir gen_redir_info`
 - migration at http://trentm.disqus.com/admin/tools/migrate/
 
 
 # style
 
-- recolor: https://github.com/altercation/solarized
 - tweet thing a la http://mir.aculo.us/2011/04/11/i-for-one-welcome-our-new-micro-framework-overlords/
 - better rendered logo image for small screen
 - "Kepler Light"? http://dribbble.com/shots/153899-Article-header
@@ -59,3 +57,4 @@
 - http://eng.wealthfront.com/2010/11/arrhythmiajs-new-take-on-rhythm.html
 - https://github.com/alexrothenberg/alexrothenberg.github.com/blob/master/_posts/2011-01-27-moved-blog-to-jekyll-and-github-pages.md
 - http://docs.disqus.com/developers/universal/
+- color: https://github.com/altercation/solarized
