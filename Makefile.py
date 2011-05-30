@@ -161,6 +161,7 @@ def _post_from_blogger_entry(entry):
     post = {}
     post["title"] = entry.find(ns+"title").text
     post["slug"] = _slugify(post["title"])
+    post["published"] = entry.find(ns+"published").text
     post["pub_date"] = entry.find(ns+"published").text.split("T",1)[0]
     post["content"] = entry.find(ns+"content").text
     post["tags"] = []
@@ -175,10 +176,11 @@ def _post_from_blogger_entry(entry):
     post["header"] = """---
 layout: post
 title: %s
+date: %s
 published: true
 categories: [%s]
 ---
-""" % (title_val, ', '.join(post["tags"]))
+""" % (title_val, post["published"], ', '.join(post["tags"]))
     return post
 
 

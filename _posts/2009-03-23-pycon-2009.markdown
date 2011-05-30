@@ -1,0 +1,17 @@
+---
+layout: post
+title: PyCon 2009
+date: 2009-03-23T06:55:00.009-07:00
+published: true
+categories: [python, activestate]
+---
+
+<div class="left">
+<a href="http://us.pycon.org/"><img src="http://us.pycon.org/media/2009/public/pycon2009-horizontal-large-215x135.png" alt="PyCon 2009: Chicago"/></a>
+</div>
+
+<p>I'll be attending <a href="http://us.pycon.org/">PyCon</a> this year. It's been a few years since I've attended and <strong>wow</strong> has it ever grown: <a href="http://us.pycon.org/2009/conference/keynotes/">11 keynotes</a>, <a href="http://us.pycon.org/2009/conference/talks/">120 talks</a>, <a href="http://us.pycon.org/2009/conference/lightning/">5 hours of lightning talks</a>, the <a href="http://us.pycon.org/2009/about/summits/language/">Python Language Summit</a>, preceded by tutorial days and followed by <a href="http://us.pycon.org/2009/sprints/">days of sprints</a>.</p>
+
+<p>I'm looking forward to diving back into pure Python for a little while -- something I've had difficulty finding the time for with my work on <a href="http://www.activestate.com/komodo/">Komodo</a>. I'm especially looking forward to the "Package distribution &amp; installation" session at the Python Language Summit, not the least of which is because <a href="http://www.activestate.com/">ActiveState</a> is starting to devote more resources to this area. My newest co-worker <a href="http://twitter.com/nearfar">Sridhar</a> <a href="http://srid.nearfar.org/SridharRatnakumar">Ratnakumar</a> is currently looking at how ActiveState can help here.</p>
+
+<div style="clear: both"></div>
