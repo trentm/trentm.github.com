@@ -169,10 +169,9 @@ def _post_from_blogger_entry(entry):
         if cat.get("scheme") == "http://www.blogger.com/atom/ns#":
             post["tags"].append(cat.get("term"))
     post["path"] = "%(pub_date)s-%(slug)s.markdown" % post
-    assert '"' not in post["title"]
     title_val = post["title"]
-    if ':' in title_val:
-        title_val = '"%s"' % title_val
+    if ':' in title_val or '"' in title_val:
+        title_val = '"%s"' % title_val.replace('"', '\\"')
     post["header"] = """---
 layout: post
 title: %s
