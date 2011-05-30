@@ -1,7 +1,5 @@
 # high prio
 
-- thinking about redirects: use permalink front matter to get the same
-  URLs for all previous posts as on trentmick.blogspot.com
 - recurring task to pull in old posts: old posts are those with 'null'
   in redirect.json. See 'mk pull'.
     - working on the existing marker (how to install mysql python)
@@ -10,17 +8,19 @@
 
 # How to migration more post comments in disqus
 
-- add new GH _posts/*.html
+
+- add post title to "marker" in 'pull' task in Makefile.py
+- add new GH _posts/*.html: mk pull, git add
 - add URL to redirect.json
-- `mk gen_discus_redir gen_redir_info`
+- `mk gen_redir`
 - migration at http://trentm.disqus.com/admin/tools/migrate/
+  and load in _tmp/disqus.redirect
 
 
 # style
 
 - tweet thing a la http://mir.aculo.us/2011/04/11/i-for-one-welcome-our-new-micro-framework-overlords/
 - better rendered logo image for small screen
-- "Kepler Light"? http://dribbble.com/shots/153899-Article-header
 
 
 # lower prio

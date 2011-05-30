@@ -9,14 +9,16 @@ import codecs
 import re
 import difflib
 from pprint import pprint
+import json
 import itertools
 from glob import glob
 
 import mklib
 assert mklib.__version_info__ >= (0,7,2)  # for `mklib.mk`
 from mklib.common import MkError
-from mklib import Task, mk
+from mklib import Task, mk, Alias
 from mklib import sh
+
 
 
 class feeds(Task):
@@ -59,29 +61,43 @@ class lint2(Task):
             print issue
 
 class pull(Task):
-    marker = "nice"
-    marker = "eol.py 0.7.4 -- Python 3 support"
-    marker = "moving this blog to blogger"
-    marker = "How to install MySQL-python 1.2.3c1 on Mac OS X"
     def make(self):
-        entry = _blogger_entry_from_title_marker(self.marker)
-        #TODO: get categories in this `post` data structure
-        post = _post_from_blogger_entry(entry)
-        pprint(post)
-        path = join(self.dir, "_posts", post["path"])
-        if exists(path):
-            raise RuntimeError("'%s' already exists" % path)
-        #codecs.open(path, 'w', 'utf-8').write("%(header)s\n%(content)s" % post)
-        print "'%s' written" % path
+        ns = "{http://www.w3.org/2005/Atom}"
+        redirects = json.loads(codecs.open("redirect.json", 'r', 'utf-8').read())
+        for r in redirects:
+            date, fromurl, tourl = r
+            if tourl is not None:
+                continue
+            print "--"
+            frombase = basename(fromurl)
+            entry = _blogger_entry_from_url_marker(frombase)
+            assert entry
+            post = _post_from_blogger_entry(entry)
+            #pprint(post)
+            path = join(self.dir, "_posts", post["path"])
+            if exists(path):
+                raise RuntimeError("'%s' already exists" % path)
+            codecs.open(path, 'w', 'utf-8').write("%(header)s\n%(content)s" % post)
+            print "'%s' written" % path
+            date_bits = post["pub_date"].split('-')
+            r[2] = "http://trentm.com/%s/%s/%s.html" % (date_bits[0],
+                date_bits[1], post["slug"])
+            codecs.open("redirect.json", 'w', 'utf-8').write(json.dumps(redirects, indent=2))
+            print "'redirect.json' updated with '%s'" % (r[2])
+            
+            break
 
-class gen_discus_redir(Task):
+class gen_redir(Alias):
+    deps = ["gen_disqus_redir", "gen_redir_info"]
+
+class gen_disqus_redir(Task):
     """Generate tmp/discus.redir for setting up Discus comment thread
     redirects from my old blog. "URL map" here:
         http://trentcommenttest.disqus.com/admin/tools/migrate/
         http://trentm.disqus.com/admin/tools/migrate/
     """
     input = "redirect.json"
-    output = "_tmp/discus.redirect"
+    output = "_tmp/disqus.redirect"
     def make(self):
         import json
         import csv
@@ -131,6 +147,15 @@ def _blogger_entry_from_title_marker(marker):
         if title is not None and marker in title.text:
             return entry
 
+def _blogger_entry_from_url_marker(marker):
+    from xml.etree import ElementTree as ET
+    ns = "{http://www.w3.org/2005/Atom}"
+    tree = ET.parse(glob(join(dirname(__file__), "d/blog-*.xml"))[0]).getroot()
+    for entry in tree:
+        for link in entry.findall(ns+"link"):
+            if link.get('rel') == 'alternate' and marker in link.get('href'):
+                return entry
+
 def _post_from_blogger_entry(entry):
     ns = "{http://www.w3.org/2005/Atom}"
     post = {}
@@ -143,13 +168,17 @@ def _post_from_blogger_entry(entry):
         if cat.get("scheme") == "http://www.blogger.com/atom/ns#":
             post["tags"].append(cat.get("term"))
     post["path"] = "%(pub_date)s-%(slug)s.markdown" % post
+    assert '"' not in post["title"]
+    title_val = post["title"]
+    if ':' in title_val:
+        title_val = '"%s"' % title_val
     post["header"] = """---
 layout: post
 title: %s
 published: true
 categories: [%s]
 ---
-""" % (post["title"], ', '.join(post["tags"]))
+""" % (title_val, ', '.join(post["tags"]))
     return post
 
 
