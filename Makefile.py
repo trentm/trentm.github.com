@@ -88,6 +88,7 @@ class pull(Task):
             break
 
 class gen_redir(Alias):
+    """regen all files from 'redirects.json'"""
     deps = ["gen_disqus_redir", "gen_redir_info"]
 
 class gen_disqus_redir(Task):
