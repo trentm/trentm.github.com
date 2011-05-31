@@ -1,0 +1,25 @@
+---
+layout: post
+title: Komodo 3.5.2 is out
+date: 2005-12-09T07:22:00.009-08:00
+published: true
+categories: [komodo, activestate]
+---
+
+<div style="float: right; margin-left: 10px; margin-bottom: 10px;"> <a href="http://www.flickr.com/photos/trento/66725521/" title="photo sharing"><img src="http://static.flickr.com/28/66725521_cf17207995_m.jpg" style="border: 2px solid rgb(0, 0, 0);" /></a> <br /> <span style="font-size: 0.9em; margin-top: 0px;">&nbsp; <a href="http://www.flickr.com/photos/trento/66725521/">Komodo Dragon</a>&nbsp; <br />&nbsp; Originally uploaded by <a href="http://www.flickr.com/people/trento/">trento</a>. </span></div>
+
+<p>I am pleased to announce the release of Komodo 3.5.2 for Linux, Mac OS X, and Windows. This is a bug fix release for the Komodo 3.5.x stream. The important fixes include:
+
+</p>
+
+<ul>
+<li>[Windows] Fix AltGr+&lt;number&gt; keybindings for international keyboard layouts on Windows (bug 43021)</li>
+<li>[Windows] Fix XSLT autocomplete (bug 41898).</li>
+<li>Perl syntax checking default setting change to not use taint mode.</li>
+<li>[Windows] Fix setting of Windows File associations (bug 42107).</li>
+<li>[Linux] Fix SELinux issues that would prevent Komodo from starting on Linux machines with SELinux kernel extensions installed and enforcing -- the default on Fedora Core 4 (bug 43260).</li>
+</ul>
+
+<p>See the <a href="http://aspn.activestate.com/ASPN/docs/Komodo/3.5/revisions.html#ko352">Revision History</a> for more details.</p> 
+
+<p>Download Komodo and find more information <a href="http://www.activestate.com/Products/Komodo/">here</a>.</p>
