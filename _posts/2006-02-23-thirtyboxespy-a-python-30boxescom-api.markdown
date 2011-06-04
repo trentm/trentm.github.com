@@ -1,6 +1,6 @@
 ---
 layout: post
-title: thirtyboxes.py &mdash; a Python 30boxes.com API
+title: thirtyboxes.py &#8212; a Python 30boxes.com API
 date: 2006-02-23T16:58:00.009-08:00
 published: true
 categories: [python, programming, ui]
