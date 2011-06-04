@@ -1,13 +1,5 @@
-# high prio
-
-- recurring task to pull in old posts: old posts are those with 'null'
-  in redirect.json. See 'mk pull'.
-    - working on the existing marker (how to install mysql python)
-    - #TODO: get categories in this `post` data structure
-- plan the switch, <link> for feedburner
 
 # How to migration more post comments in disqus
-
 
 - add post title to "marker" in 'pull' task in Makefile.py
 - add new GH _posts/*.html: mk pull, git add
@@ -16,6 +8,14 @@
 - migration at http://trentm.disqus.com/admin/tools/migrate/
   and load in _tmp/disqus.redirect
 
+# migration
+
+- these old feeds still have subscribers. Try to put a "moved to here"
+  content there:
+     http://trentm.com/blog/wp-atom.php
+     http://trentm.com/blog/wp-rss2.php
+     http://trentm.com/blog/feed/
+     
 
 # style
 
@@ -48,13 +48,3 @@
 - apple-touch-icon.png
 - yahoo JS profiling stuff from html5boilerplate (I've removed it)
 
-
-# links
-
-- https://github.com/tobi/liquid/wiki/Liquid-for-Designers
-- http://lessframework.com/
-- http://www.avc.com/a_vc/2010/11/mobile-first-web-second-continued.html
-- http://eng.wealthfront.com/2010/11/arrhythmiajs-new-take-on-rhythm.html
-- https://github.com/alexrothenberg/alexrothenberg.github.com/blob/master/_posts/2011-01-27-moved-blog-to-jekyll-and-github-pages.md
-- http://docs.disqus.com/developers/universal/
-- color: https://github.com/altercation/solarized
