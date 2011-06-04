@@ -27,7 +27,7 @@ This part of his talk really stuck out for me (transcription errors mine):
 > ...
 > 
 > If you're happy, things work better because you're more creative. You get a
-> little problem, you say "Ah, I'll figure it out. No big deal."
+> little problem, you say &#8220;Ah, I'll figure it out. No big deal.&#8221;
 
 Don Norman's ideas may be more relevant to industrial design, but I think this
 can safely be applied to software design (more my domain). Don points to how
