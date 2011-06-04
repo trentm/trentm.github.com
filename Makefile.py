@@ -12,6 +12,7 @@ from pprint import pprint
 import json
 import itertools
 from glob import glob
+import datetime
 
 import mklib
 assert mklib.__version_info__ >= (0,7,2)  # for `mklib.mk`
@@ -20,18 +21,37 @@ from mklib import Task, mk, Alias
 from mklib import sh
 
 
-
-class feeds(Task):
-    """diff feed"""
-    def make(self):
-        print "http://feeds.feedburner.com/trentmick"
-        print "http://localhost:4000/atom.xml"
-        print "http://www.blogger.com/feeds/1552913144533093368/posts/default"
-
 class devserver(Task):
     """run local Jekyll devserver"""
     def make(self):
         os.system("_stuff/devserver")
+
+class newpost(Task):
+    """start a new post"""
+    def make(self):
+        if "TITLE" not in os.environ:
+            print "error: set 'TITLE' envvar"
+            return 1
+        title = os.environ["TITLE"]
+        now = datetime.datetime.now()
+        path = join(self.dir,
+            now.strftime("_posts/%Y-%m-%d-") + _slugify(title) + ".markdown")
+        title_esc = title
+        if ':' in title_esc or '"' in title_esc:
+            title_esc = '"%s"' % title_esc.replace('"', '\\"')
+        template = [
+            "---",
+            "layout: post",
+            "title: %s" % title_esc,
+            "published: true",
+            "date: %s" % now.isoformat(),
+            "---",
+            ""
+        ]
+        codecs.open(path, 'w', 'utf-8').write('\n'.join(template))
+        self.log.info("Wrote '%s'.", path)
+        os.system("git add %s" % path)
+        os.system("open -a 'Komodo IDE.app' %s" % path)
 
 class lint(Task):
     """Lint the latest post (or path in POST envvar)."""
@@ -54,11 +74,6 @@ class lintall(Task):
             print "# lint %s" % path
             for issue in _lintpost(path):
                 print issue
-
-class lint2(Task):
-    def make(self):
-        for issue in _lintpost('/Users/trentm/tm/trentm.github.com/_posts/2010-06-14-django-markdown-deux-django-app.markdown'):
-            print issue
 
 class pull(Task):
     def make(self):
