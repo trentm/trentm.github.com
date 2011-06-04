@@ -8,15 +8,6 @@
 - migration at http://trentm.disqus.com/admin/tools/migrate/
   and load in _tmp/disqus.redirect
 
-# migration
-
-- these old feeds still have subscribers. Try to put a "moved to here"
-  content there:
-     http://trentm.com/blog/wp-atom.php
-     http://trentm.com/blog/wp-rss2.php
-     http://trentm.com/blog/feed/
-     
-
 # style
 
 - tweet thing a la http://mir.aculo.us/2011/04/11/i-for-one-welcome-our-new-micro-framework-overlords/
