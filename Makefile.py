@@ -45,6 +45,7 @@ class newpost(Task):
             "title: %s" % title_esc,
             "published: true",
             "date: %s" % now.isoformat(),
+            #"categories": "[]"
             "---",
             ""
         ]
@@ -75,129 +76,8 @@ class lintall(Task):
             for issue in _lintpost(path):
                 print issue
 
-class pull(Task):
-    def make(self):
-        ns = "{http://www.w3.org/2005/Atom}"
-        redirects = json.loads(codecs.open("redirect.json", 'r', 'utf-8').read())
-        for r in redirects:
-            date, fromurl, tourl = r
-            if tourl is not None:
-                continue
-            print "--"
-            frombase = basename(fromurl)
-            entry = _blogger_entry_from_url_marker(frombase)
-            assert entry
-            post = _post_from_blogger_entry(entry)
-            #pprint(post)
-            path = join(self.dir, "_posts", post["path"])
-            if exists(path):
-                raise RuntimeError("'%s' already exists" % path)
-            codecs.open(path, 'w', 'utf-8').write("%(header)s\n%(content)s" % post)
-            print "'%s' written" % path
-            date_bits = post["pub_date"].split('-')
-            r[2] = "http://trentm.com/%s/%s/%s.html" % (date_bits[0],
-                date_bits[1], post["slug"])
-            codecs.open("redirect.json", 'w', 'utf-8').write(json.dumps(redirects, indent=2))
-            print "'redirect.json' updated with '%s'" % (r[2])
-            
-            break
-
-class gen_redir(Alias):
-    """regen all files from 'redirects.json'"""
-    deps = ["gen_disqus_redir", "gen_redir_info"]
-
-class gen_disqus_redir(Task):
-    """Generate tmp/discus.redir for setting up Discus comment thread
-    redirects from my old blog. "URL map" here:
-        http://trentcommenttest.disqus.com/admin/tools/migrate/
-        http://trentm.disqus.com/admin/tools/migrate/
-    """
-    input = "redirect.json"
-    output = "_tmp/disqus.redirect"
-    def make(self):
-        import json
-        import csv
-        redirect = json.load(open(join(self.dir, self.input)))
-        foutput = open(join(self.dir, self.output), 'w')
-        try:
-            writer = csv.writer(foutput)
-            for r in redirect:
-                if r[-1] is not None:
-                    writer.writerow(r[1:])
-        finally:
-            foutput.close()
-            self.log.info("'%s' created", self.output)
-
-class gen_redir_info(Task):
-    input = "redirect.json"
-    output = "_includes/redirectinfo.json"
-    def make(self):
-        import json
-        from urlparse import urlparse
-        redirects = json.load(open(join(self.dir, self.input)))
-        info_from_path = {}
-        for date, fromurl, tourl in redirects:
-            parts = urlparse(fromurl)
-            frompath = parts[2]
-            info_from_path[frompath] = tourl and urlparse(tourl)[2]
-            #{
-            #    "date": date,
-            #    "fromurl": fromurl,
-            #    "tourl": tourl,
-            #    "topath": tourl and urlparse(tourl)[2]
-            #}
-        codecs.open(join(self.dir, self.output), 'w', 'utf-8').write(
-            json.dumps(info_from_path, indent=2))
-        self.log.info("'%s' created", self.output)
-            
-
 
 #---- internal support stuff
-
-def _blogger_entry_from_title_marker(marker):
-    from xml.etree import ElementTree as ET
-    ns = "{http://www.w3.org/2005/Atom}"
-    tree = ET.parse(glob(join(dirname(__file__), "d/blog-*.xml"))[0]).getroot()
-    for entry in tree:
-        title = entry.find(ns+"title")
-        if title is not None and marker in title.text:
-            return entry
-
-def _blogger_entry_from_url_marker(marker):
-    from xml.etree import ElementTree as ET
-    ns = "{http://www.w3.org/2005/Atom}"
-    tree = ET.parse(glob(join(dirname(__file__), "d/blog-*.xml"))[0]).getroot()
-    for entry in tree:
-        for link in entry.findall(ns+"link"):
-            if link.get('rel') == 'alternate' and marker in link.get('href'):
-                return entry
-
-def _post_from_blogger_entry(entry):
-    ns = "{http://www.w3.org/2005/Atom}"
-    post = {}
-    post["title"] = entry.find(ns+"title").text
-    post["slug"] = _slugify(post["title"])
-    post["published"] = entry.find(ns+"published").text
-    post["pub_date"] = entry.find(ns+"published").text.split("T",1)[0]
-    post["content"] = entry.find(ns+"content").text
-    post["tags"] = []
-    for cat in entry.findall(ns+"category"):
-        if cat.get("scheme") == "http://www.blogger.com/atom/ns#":
-            post["tags"].append(cat.get("term"))
-    post["path"] = "%(pub_date)s-%(slug)s.markdown" % post
-    title_val = post["title"]
-    if ':' in title_val or '"' in title_val:
-        title_val = '"%s"' % title_val.replace('"', '\\"')
-    post["header"] = """---
-layout: post
-title: %s
-date: %s
-published: true
-categories: [%s]
----
-""" % (title_val, post["published"], ', '.join(post["tags"]))
-    return post
-
 
 ## {{{ http://code.activestate.com/recipes/577257/ (r1)
 _slugify_strip_re = re.compile(r'[^\w\s-]')

@@ -1,13 +1,3 @@
-
-# How to migration more post comments in disqus
-
-- add post title to "marker" in 'pull' task in Makefile.py
-- add new GH _posts/*.html: mk pull, git add
-- add URL to redirect.json
-- `mk gen_redir`
-- migration at http://trentm.disqus.com/admin/tools/migrate/
-  and load in _tmp/disqus.redirect
-
 # style
 
 - tweet thing a la http://mir.aculo.us/2011/04/11/i-for-one-welcome-our-new-micro-framework-overlords/
