@@ -1,3 +1,7 @@
+# top
+
+- blogger redirect
+
 # style
 
 - tweet thing a la http://mir.aculo.us/2011/04/11/i-for-one-welcome-our-new-micro-framework-overlords/
