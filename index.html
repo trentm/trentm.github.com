@@ -27,3 +27,16 @@ title: Trent Mick
       and <a href="https://bitbucket.org/trentm">bitbucket</a> accounts</li>
   </ul>
 </div>
+
+<script>
+/* Blank line between years. */
+var year = null;
+$('td.date').each(function(i, td) {
+  var y = td.textContent;
+  y = y.slice(7);
+  if (year !== null && y !== year) {
+    $(td).css('padding-top', '12px')
+  }
+  year = y;
+});
+</script>
