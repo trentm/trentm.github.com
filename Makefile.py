@@ -21,21 +21,22 @@ from mklib import Task, mk, Alias
 from mklib import sh
 
 
-class devserver(Task):
+class run(Task):
     """run local Jekyll devserver"""
     def make(self):
         os.system("_stuff/devserver")
 
-class newpost(Task):
+class post(Task):
     """start a new post"""
     def make(self):
-        if "TITLE" not in os.environ:
-            print "error: set 'TITLE' envvar"
-            return 1
-        title = os.environ["TITLE"]
+        title = query("Title")
+        slug = query("Slug", _slugify(title))
+        categories = [c.strip()
+            for c in re.split(r'\s*[,\s]\s*', query("Categories"))]
+        
         now = datetime.datetime.now()
         path = join(self.dir,
-            now.strftime("_posts/%Y-%m-%d-") + _slugify(title) + ".markdown")
+            now.strftime("_posts/%Y-%m-%d-") + slug + ".markdown")
         title_esc = title
         if ':' in title_esc or '"' in title_esc:
             title_esc = '"%s"' % title_esc.replace('"', '\\"')
@@ -45,7 +46,10 @@ class newpost(Task):
             "title: %s" % title_esc,
             "published: true",
             "date: %s" % now.isoformat(),
-            #"categories": "[]"
+        ]
+        if categories:
+            template.append("categories: [%s]" % ", ".join(categories))
+        template += [
             "---",
             ""
         ]
@@ -78,6 +82,19 @@ class lintall(Task):
 
 
 #---- internal support stuff
+
+## {{{ http://code.activestate.com/recipes/577099/ (r1)
+def query(question, default=None):
+    s = question
+    if default:
+        s += " [%s]" % default
+    s += ": "
+    answer = raw_input(s)
+    answer = answer.strip()
+    if not answer:
+        return default
+    return answer
+## end of http://code.activestate.com/recipes/577099/ }}}
 
 ## {{{ http://code.activestate.com/recipes/577257/ (r1)
 _slugify_strip_re = re.compile(r'[^\w\s-]')
