@@ -16,4 +16,4 @@ Setup for dev testing:
 
 # Notes & Links
 
-- http://github.com/tobi/liquid/wiki/Liquid-for-Designers
+- https://github.com/shopify/liquid/wiki/liquid-for-designers
