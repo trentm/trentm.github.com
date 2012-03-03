@@ -32,8 +32,8 @@ class post(Task):
         title = query("Title")
         slug = query("Slug", _slugify(title))
         categories = [c.strip()
-            for c in re.split(r'\s*[,\s]\s*', query("Categories"))]
-        
+            for c in re.split(r'\s*[,\s]\s*', query("Categories", ""))]
+
         now = datetime.datetime.now()
         path = join(self.dir,
             now.strftime("_posts/%Y-%m-%d-") + slug + ".markdown")
