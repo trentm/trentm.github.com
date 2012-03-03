@@ -5,9 +5,15 @@ published: true
 ---
 
 Herein a walk-through of moving a project from Google Code to GitHub. The
-project is "python-markdown2". It was single-commiter subversion project on
-Google Code with one tag and no branches. It had (has) a number of issues in
-the issue tracker, a few wiki pages and a few downloads.
+project is "python-markdown2":
+[on Google Code](http://code.google.com/p/python-markdown2/) ->
+[on GitHub](https://github.com/trentm/python-markdown2). It was
+single-commiter subversion project on Google Code with one tag and no
+branches. It had (has) a number of issues in the issue tracker, a few wiki
+pages and a few downloads.
+
+Before:
+After:
 
 This includes a couple tools I wrote for converting between Google Code
 and GitHub project wikis and issue trackers. *Note:* I originally did this
