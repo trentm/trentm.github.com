@@ -6,11 +6,14 @@
 
 - tweet thing a la http://mir.aculo.us/2011/04/11/i-for-one-welcome-our-new-micro-framework-overlords/
 - better rendered logo image for small screen
-- http://www.google.com/webfonts/list?family=PT+Sans&subset=latin ?
-
+- fonts:
+    - http://www.google.com/webfonts/list?family=PT+Sans&subset=latin ?
+    - http://blog.typekit.com/2011/10/20/new-from-typekit-faster-font-browsing/
+    - Aller Sans: http://www.design-by-izo.com/2011/10/18/what-should-i-look-for-in-a-ui-typeface/
 
 # lower prio
 
+- animations for fun: http://daneden.me/animate/#cta
 - tag/category pages
 - site search: doesn't work on iphone!?
 - categories:
