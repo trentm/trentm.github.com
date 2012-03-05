@@ -300,6 +300,9 @@ a.dsq-brlink,
 #dsq-content h3 {
   padding: 0;
 }
+#dsq-subscribe {
+  font-size: 90%;
+}
 
 
 /* ---- custom classes */
