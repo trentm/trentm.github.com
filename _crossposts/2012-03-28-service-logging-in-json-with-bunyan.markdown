@@ -323,3 +323,6 @@ Separate log files for a single service is an anti-pattern. The typical Apache e
 JSON logs bring possibilities. Feeding to tools like Splunk becomes easy. Ad hoc fields allow for a lightly spec'd comm channel from apps to other services: records with a "metric" could feed to [statsd](http://codeascraft.etsy.com/2011/02/15/measure-anything-measure-everything/), records with a "loggly: true" could feed to loggly.com.
 
 Here I've described a very simple example of restify and bunyan usage for node.js-based API services with easy JSON logging. Restify provides a powerful framework for robust API services. Bunyan provides a light API for nice JSON logging and the beginnings of tooling to help consume Bunyan JSON logs.
+
+
+**Update (29-Mar-2012):** Fix styles somewhat for RSS readers.

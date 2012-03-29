@@ -22,12 +22,12 @@ content = re.sub(r'<h1 ',
 
 # code (but not <pre><code>)
 content = re.sub(r'(?<!<pre>)<code>',
-    '<code style="background-color: #2f2f2f; border: 1px solid #484848; padding: 0.2em 0.4em;">',
+    '<code style="color: #999; background-color: #2f2f2f; border: 1px solid #484848; padding: 0.2em 0.4em;">',
     content)
 
 # pre
 content = re.sub(r'<pre>',
-    '<pre style="overflow: auto; background-color: #2f2f2f; border: 1px solid #484848; padding: 5px">',
+    '<pre style="overflow: auto; color: #999; background-color: #2f2f2f; border: 1px solid #484848; padding: 5px">',
     content)
 
 if content != origContent:
