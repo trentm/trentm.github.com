@@ -12,9 +12,6 @@ single-commiter subversion project on Google Code with one tag and no
 branches. It had (has) a number of issues in the issue tracker, a few wiki
 pages and a few downloads.
 
-Before:
-After:
-
 This includes a couple tools I wrote for converting between Google Code
 and GitHub project wikis and issue trackers. *Note:* I originally did this
 migration almost a year ago, so I'm not positive whether recent changes
