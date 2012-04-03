@@ -4,8 +4,8 @@ title: django-markdown-deux Django app
 published: true
 ---
 
-- Project page: http://github.com/trentm/django-markdown-deux
-- on PyPI: http://pypi.python.org/pypi/django-markdown-deux/
+- Project page: <http://github.com/trentm/django-markdown-deux>
+- on PyPI: <http://pypi.python.org/pypi/django-markdown-deux/>
 
 `django-markdown-deux` is a small Django app that provides template tags for using
 [Markdown](http://daringfireball.net/projects/markdown/) using the
