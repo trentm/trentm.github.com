@@ -9,7 +9,7 @@ published: true
 
 `django-markdown-deux` is a small Django app that provides template tags for using
 [Markdown](http://daringfireball.net/projects/markdown/) using the
-[python-markdown2](http://code.google.com/p/python-markdown2/) library. MIT license.
+[python-markdown2](https://github.com/trentm/python-markdown2) library. MIT license.
 
 ## What's with the &#8220;deux&#8221; in the name?
 
@@ -41,5 +41,3 @@ years: might as well put it to use.
 See more usage info, available settings, installation notes, etc. at the github
 project page. (I mention on Moz planet because Benjamin is, or was, using
 python-markdown2 and I've heard Mozilla is using more Django these days.)
-
-
