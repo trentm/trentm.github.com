@@ -1,0 +1,21 @@
+---
+layout: post
+title: 236 bus
+published: true
+date: 2012-06-06T21:35:29.941978
+categories: []
+---
+
+Because I'm tired of wading through the <http://www.translink.ca> "Next Bus"
+painful UX and hunting for the deep-in-PDF North Vancouver 236 bus and seabus
+schedule:
+
+![236 South](http://f.cl.ly/items/421a380x3s112F29201P/Screen%20shot%202012-06-06%20at%209.40.46%20PM.png)
+
+![Seabus South](http://f.cl.ly/items/031l030x0Y0P0o3y1P0s/Screen%20shot%202012-06-06%20at%209.40.03%20PM.png)
+
+![Seabus North](http://f.cl.ly/items/3B3x192D2r11153S3p2I/Screen%20shot%202012-06-06%20at%209.39.25%20PM.png)
+
+![236 North](http://f.cl.ly/items/021w39150e2M3X2t312I/Screen%20shot%202012-06-06%20at%209.40.24%20PM.png)
+
+via <http://www.translink.ca/en/Schedules-and-Maps/Timetables.aspx>.
