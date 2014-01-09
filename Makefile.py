@@ -56,7 +56,7 @@ class post(Task):
         codecs.open(path, 'w', 'utf-8').write('\n'.join(template))
         self.log.info("Wrote '%s'.", path)
         os.system("git add %s" % path)
-        os.system("open -a 'Komodo IDE.app' %s" % path)
+        os.system("open -a 'Komodo IDE 8.app' %s" % path)
 
 class lint(Task):
     """Lint the latest post (or path in POST envvar)."""
