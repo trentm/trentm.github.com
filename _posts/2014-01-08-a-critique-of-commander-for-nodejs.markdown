@@ -16,7 +16,7 @@ I wrote dashdash to fill my needs because other libs didn't. I'd be happy if
 dashdash worked well for you, but I'm not selling it. :)
 
 
-Pros:
+## Pros
 
 - Commander.js involves less typing and more compact, which helps for quick
   readability.
@@ -43,7 +43,7 @@ Pros:
   is good.
 
 
-Cons:
+## Cons
 
 - How to get rid of `-h|--help` and `-V|--version`? I definitely advocate that
   all CLI tools have a those options (sometimes just "--version" and not the
