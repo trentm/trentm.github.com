@@ -43,7 +43,9 @@ dashdash worked well for you, but I'm not selling it. :)
 
 - Having many
   [examples](https://github.com/visionmedia/commander.js/tree/master/examples)
-  is good.
+  is good. [**Update:** Dashdash is growing some
+  [examples](https://github.com/trentm/node-dashdash/tree/master/examples)
+  of its own.]
 
 
 ## Cons
