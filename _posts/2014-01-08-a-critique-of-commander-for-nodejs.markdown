@@ -21,7 +21,10 @@ dashdash worked well for you, but I'm not selling it. :)
 - Commander.js involves less typing and more compact, which helps for quick
   readability.
 
-- Commander.js supports [custom parsing of option
+- [**Update 2014-03-28:** As of dashdash@1.5.0, custom option types are supported by
+  dashdash.]
+
+  Commander.js supports [custom parsing of option
   arguments](https://github.com/visionmedia/commander.js#coercion). That's good
   and something that dashdash doesn't have. Dashdash has a [number of
   canned types](https://github.com/trentm/node-dashdash#option-specs) that
