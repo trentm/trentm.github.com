@@ -11,7 +11,7 @@ published: true
 [Markdown](http://daringfireball.net/projects/markdown/) using the
 [python-markdown2](https://github.com/trentm/python-markdown2) library. MIT license.
 
-## What's with the &#8220;deux&#8221; in the name?
+## What&#8217;s with the &#8220;deux&#8221; in the name?
 
 The obvious name for this project in `django-markdown2`. However, there
 [already is one!](http://github.com/svetlyak40wt/django-markdown2) and name

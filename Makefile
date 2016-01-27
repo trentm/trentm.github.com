@@ -5,3 +5,11 @@ run:
 .PHONY: post
 post:
 	@./_stuff/mkpost.py
+
+
+.PHONY: check-posts
+check-posts:
+	@./_stuff/lintpost.py _posts/????-??-??-*.markdown
+
+.PHONY: check
+check: check-posts

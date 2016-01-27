@@ -16,7 +16,7 @@ This part of his talk really stuck out for me (transcription errors mine):
 
 > I really had the feeling that pleasant things work better and that never made
 > any sense to me, until I finally figured it out. Look:
-> 
+>
 > I'm gonna put a plank on the ground. So imagine I have a plank about 2' wide
 > and 30' long. And I'm going to walk on it. See I can walk on it without
 > looking, and go back and forth, and I can jump up and down. No problem. Now I'm
@@ -25,7 +25,7 @@ This part of his talk really stuck out for me (transcription errors mine):
 > works.
 >
 > ...
-> 
+>
 > If you're happy, things work better because you're more creative. You get a
 > little problem, you say &#8220;Ah, I'll figure it out. No big deal.&#8221;
 
@@ -41,17 +41,16 @@ time on making a UI "pretty". Occassionally in work debates -- whether on
 point.
 
 
-# Miro <img src="http://dl.getdropbox.com/u/1301040/blog/2009/06/miro2.png" alt="miro" title="miro" width="94" height="78" class="right100">
+# Miro
+
+<img src="http://dl.getdropbox.com/u/1301040/blog/2009/06/miro2.png" alt="miro" title="miro" width="94" height="78" class="right100">
 
 BTW, thanks to
-[stephen](http://trentm.com/blog/archives/2009/04/24/re-installing-mac-os-x-software-i-use/#comment-2533).
+[stephen](http://trentm.com/2009/04/re-installing-mac-os-x-software-i-use.html#comment-178393871).
 A few weeks ago I reinstalled my Mac book and
-[posted](http://trentm.com/blog/archives/2009/04/24/re-installing-mac-os-x-software-i-use/)
+[posted](http://trentm.com/2009/04/re-installing-mac-os-x-software-i-use.html#comment-178393871)
 a list of the software I use. Stephen suggested I add
 [Miro](http://www.getmiro.com/) to that list. Cue many evenings of watching TED
 talks (including the above talk) and other programs.
 
 After installing Miro, visit <https://miroguide.com/feeds/2014> to get the latest TED Talks.
-
-
-
