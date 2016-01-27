@@ -1,4 +1,4 @@
 markdown: rdiscount
-pygments: false
+highlighter: false
 lsi: false
 permalink: /:year/:month/:title.html

@@ -1,15 +1,17 @@
-<!--
+---
 layout: post
 title: "Service logging in JSON with Bunyan"
-published: false
+published: true
 date: 2012-03-28T18:07:54.653Z
-categories: [nodejs, programming, logging]
--->
+categories: [nodejs, programming, logging, bunyan]
+---
 
 <div style="float: right; margin: 0 0 15px 15px">
-<img class="alignnone size-full wp-image-469" title="Bunyan" src="http://nodeblog.files.wordpress.com/2012/03/bunyan.png" alt="Paul Bunyan and Babe the Blue Ox" width="240" height="320" /><br/>
+<img class="alignnone size-full wp-image-469" title="Bunyan" src="/img/posts/paul-bunyan-and-babe.png" alt="Paul Bunyan and Babe the Blue Ox" width="240" height="320" /><br/>
 <a href="http://www.flickr.com/photos/stublag/2876034487">Photo by Paul Carroll</a>
 </div>
+
+*[This was originally posted to the [node.js blog](https://nodejs.org/en/blog/module/service-logging-in-json-with-bunyan/).]*
 
 Service logs are gold, if you can mine them. We scan them for occasional debugging. Perhaps we grep them looking for errors or warnings, or setup an occasional nagios log regex monitor. If that. This is a waste of the best channel for data about a service.
 
