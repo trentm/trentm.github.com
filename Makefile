@@ -13,3 +13,7 @@ check-posts:
 
 .PHONY: check
 check: check-posts
+
+.PHONY: now
+now:
+	@node -e 'console.log(new Date().toISOString())'
