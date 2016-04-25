@@ -6,6 +6,11 @@ date: 2016-04-25T16:02:55.665831
 categories: [docker, programming]
 ---
 
+Update (2016-04-25): I use a `json` command below that you can install via
+`npm install -g json`. See <http://trentm.com/json/>.
+
+---
+
 I got a key to the beta Docker for Mac recently and I'm working at updating
 Joyent's [node.js Docker Registry client](https://github.com/joyent/node-docker-registry-client)
 for some recent [Docker Distribution](https://github.com/docker/distribution)
