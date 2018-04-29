@@ -1,10 +1,11 @@
 # top
 
-- blogger redirect
+Personal website privacy thing in pocket
+https://vincent.bernat.im/en/blog/2018-more-privacy-blog
+
 
 # style
 
-- tweet thing a la http://mir.aculo.us/2011/04/11/i-for-one-welcome-our-new-micro-framework-overlords/
 - better rendered logo image for small screen
 - fonts:
     - http://www.google.com/webfonts/list?family=PT+Sans&subset=latin ?
