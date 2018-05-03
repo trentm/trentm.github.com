@@ -6,9 +6,9 @@ published: true
 categories: [personal]
 ---
 
-<div class="left"><a href="http://www.flickr.com/photos/trento/3143590128/" title="mini-mick2 ultrasound (close-up)"><img src="//farm4.static.flickr.com/3088/3143590128_88f7c32d10_m.jpg" width="240" height="186" alt="mini-mick2 ultrasound (close-up)" /></a></div>
+<div class="left"><a href="https://www.flickr.com/photos/trento/3143590128/" title="mini-mick2 ultrasound (close-up)"><img src="//farm4.static.flickr.com/3088/3143590128_88f7c32d10_m.jpg" width="240" height="186" alt="mini-mick2 ultrasound (close-up)" /></a></div>
 
-<div class="left" style="clear: both"><a href="http://www.flickr.com/photos/trento/3252025587/" title="mini-mick 2 ultrasound at 18 weeks"><img src="//farm4.static.flickr.com/3053/3252025587_b826a7f9a9_m.jpg" width="240" height="128" alt="mini-mick 2 ultrasound at 18 weeks" /></a></div>
+<div class="left" style="clear: both"><a href="https://www.flickr.com/photos/trento/3252025587/" title="mini-mick 2 ultrasound at 18 weeks"><img src="//farm4.static.flickr.com/3053/3252025587_b826a7f9a9_m.jpg" width="240" height="128" alt="mini-mick 2 ultrasound at 18 weeks" /></a></div>
 
 <div style="clear: both">
 mm2 (code name joaquim) is on his or her way -- due in early July. Above are scans from mm2's ultrasounds at 12 and 18 weeks.

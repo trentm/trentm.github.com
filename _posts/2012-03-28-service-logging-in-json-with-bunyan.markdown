@@ -8,7 +8,7 @@ categories: [nodejs, programming, logging, bunyan]
 
 <div style="float: right; margin: 0 0 15px 15px">
 <img class="alignnone size-full wp-image-469" title="Bunyan" src="/img/posts/paul-bunyan-and-babe.png" alt="Paul Bunyan and Babe the Blue Ox" width="240" height="320" /><br/>
-<a href="http://www.flickr.com/photos/stublag/2876034487">Photo by Paul Carroll</a>
+<a href="https://www.flickr.com/photos/stublag/2876034487">Photo by Paul Carroll</a>
 </div>
 
 *[This was originally posted to the [node.js blog](https://nodejs.org/en/blog/module/service-logging-in-json-with-bunyan/).]*

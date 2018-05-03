@@ -6,7 +6,7 @@ published: true
 categories: [komodo, activestate]
 ---
 
-<div style="float: right; margin-left: 10px; margin-bottom: 10px;"> <a href="http://www.flickr.com/photos/trento/66725521/" title="photo sharing"><img src="//static.flickr.com/28/66725521_cf17207995_m.jpg" style="border: 2px solid rgb(0, 0, 0);" /></a> <br /> <span style="font-size: 0.9em; margin-top: 0px;">&nbsp; <a href="http://www.flickr.com/photos/trento/66725521/">Komodo Dragon</a>&nbsp; <br />&nbsp; Originally uploaded by <a href="http://www.flickr.com/people/trento/">trento</a>. </span></div>
+<div style="float: right; margin-left: 10px; margin-bottom: 10px;"> <a href="https://www.flickr.com/photos/trento/66725521/" title="photo sharing"><img src="//static.flickr.com/28/66725521_cf17207995_m.jpg" style="border: 2px solid rgb(0, 0, 0);" /></a> <br /> <span style="font-size: 0.9em; margin-top: 0px;">&nbsp; <a href="https://www.flickr.com/photos/trento/66725521/">Komodo Dragon</a>&nbsp; <br />&nbsp; Originally uploaded by <a href="https://www.flickr.com/people/trento/">trento</a>. </span></div>
 
 <p>I am pleased to announce the release of Komodo 3.5.2 for Linux, Mac OS X, and Windows. This is a bug fix release for the Komodo 3.5.x stream. The important fixes include:
 

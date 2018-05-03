@@ -7,7 +7,7 @@ categories: [General]
 ---
 
 <div class="left">
-<a href="http://www.flickr.com/photos/trento/155804565/" title="photo sharing"><img src="//static.flickr.com/61/155804565_1b5b053959_m.jpg" alt="" style="border: solid 2px #000000;" /></a>
+<a href="https://www.flickr.com/photos/trento/155804565/" title="photo sharing"><img src="//static.flickr.com/61/155804565_1b5b053959_m.jpg" alt="" style="border: solid 2px #000000;" /></a>
 </div>
 
 <p>Borgå is a lovely small town outside of Helsinki. My mom grew up on a farm nearby. The town is a popular tourist town -- partly because of its proximity to Helsinki, its lovely waterfront and the gorgeous medieval Porvoo Cathedral pictured above. (Porvoo is the Finnish name, Borgå the Swedish.) My parents were married in this church.</p>
@@ -15,7 +15,7 @@ categories: [General]
 <p><br style="clear: both"/></p>
 
 <div class="right">
-<a href="http://www.flickr.com/photos/trento/155804574/" title="Borga Cathedral fire"><img src="//static.flickr.com/77/155804574_0240c37561_m.jpg" width="240" height="180" alt="borga_church_fire" /></a>
+<a href="https://www.flickr.com/photos/trento/155804574/" title="Borga Cathedral fire"><img src="//static.flickr.com/77/155804574_0240c37561_m.jpg" width="240" height="180" alt="borga_church_fire" /></a>
 </div>
 
 <p>Unfortunately most of it burnt down today/yesterday. Arson is suspected. A#@hole.</p>

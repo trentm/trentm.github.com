@@ -7,7 +7,7 @@ categories: [python, activestate]
 ---
 
 <div style="float: right; margin-left: 10px; margin-bottom: 10px;">
-<a href="http://www.flickr.com/photos/trento/103732013/" title="flying python"><img src="//static.flickr.com/31/103732013_849d7f3bb9_m.jpg" style="border: medium none ;" /></a>
+<a href="https://www.flickr.com/photos/trento/103732013/" title="flying python"><img src="//static.flickr.com/31/103732013_849d7f3bb9_m.jpg" style="border: medium none ;" /></a>
 </div>
 
 <p><a href="http://www.activestate.com/Products/ActivePython/">ActivePython 2.4.3.11</a> is out!</p>

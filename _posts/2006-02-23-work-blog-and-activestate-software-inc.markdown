@@ -6,7 +6,7 @@ published: true
 categories: [General]
 ---
 
-<p><a href="http://www.flickr.com/photos/trento/103732013/" title="flying python" style="float: right"><img src="//static.flickr.com/31/103732013_849d7f3bb9_m.jpg" alt="" style="border: none;" /></a></p>
+<p><a href="https://www.flickr.com/photos/trento/103732013/" title="flying python" style="float: right"><img src="//static.flickr.com/31/103732013_849d7f3bb9_m.jpg" alt="" style="border: none;" /></a></p>
 
 <p style="">I have <a href="http://blogs.activestate.com/trentm/">a work blog</a> now.  Mostly I'll be talking about <a href="http://www.activestate.com/Products/ActivePython/">ActivePython</a> and <a href="http://www.activestate.com/Products/Komodo/">Komodo</a> there.
 

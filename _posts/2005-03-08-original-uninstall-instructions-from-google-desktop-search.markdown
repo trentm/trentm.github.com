@@ -6,7 +6,7 @@ published: true
 categories: [General]
 ---
 
-<p><a href="http://www.flickr.com/photos/trento/6137337/" title="photo sharing"><img src="//photos3.flickr.com/6137337_453344f32c_m.jpg" alt="" style="border: solid 2px #000000;" /></a></p>
+<p><a href="https://www.flickr.com/photos/trento/6137337/" title="photo sharing"><img src="//photos3.flickr.com/6137337_453344f32c_m.jpg" alt="" style="border: solid 2px #000000;" /></a></p>
 
 <p><br clear="all" /></p>
 

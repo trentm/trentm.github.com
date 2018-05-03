@@ -24,7 +24,7 @@ Here I want to talk about Komodo's new "History" feature.</p>
 
 <h2>History overview</h2>
 
-<p><a href="http://www.flickr.com/photos/trento/3253669957/" title="screenshot of Komodo 5.1's history feature"><img src="//farm4.static.flickr.com/3009/3253669957_903874fa5c_o.jpg" width="570" height="448" alt="screenshot of Komodo 5.1's history feature" /></a></p>
+<p><a href="https://www.flickr.com/photos/trento/3253669957/" title="screenshot of Komodo 5.1's history feature"><img src="//farm4.static.flickr.com/3009/3253669957_903874fa5c_o.jpg" width="570" height="448" alt="screenshot of Komodo 5.1's history feature" /></a></p>
 
 <p>Komodo's History feature is like your browser's history, but for the editor.
 Back and Forward buttons in the toolbar. Same default keybindings as in
