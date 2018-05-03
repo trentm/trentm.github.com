@@ -7,7 +7,7 @@ categories: [docker, programming]
 ---
 
 Update (2016-04-25): I use a `json` command below that you can install via
-`npm install -g json`. See <http://trentm.com/json/>.
+`npm install -g json`. See <https://trentm.com/json/>.
 
 ---
 
