@@ -10,5 +10,5 @@ Komodo Edit doc icon so she [made a (cool)
 replacement](http://skitch.com/trishacupra/n5tyy/dock).
 
 
-<p><img src="http://img.skitch.com/20100324-tgcpb7xbkswjasb7u92sik4t2u.png"></p>
+<p><img src="//img.skitch.com/20100324-tgcpb7xbkswjasb7u92sik4t2u.png"></p>
 

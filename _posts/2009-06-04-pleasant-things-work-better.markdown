@@ -9,7 +9,7 @@ happy"](http://www.ted.com/index.php/talks/don_norman_on_design_and_emotion.html
 last night:
 
 <p>
-<object width="446" height="326"><param name="movie" value="http://video.ted.com/assets/player/swf/EmbedPlayer.swf"></param><param name="allowFullScreen" value="true" /><param name="wmode" value="transparent"></param><param name="bgColor" value="#ffffff"></param> <param name="flashvars" value="vu=http://video.ted.com/talks/embed/DonNorman_2003-embed_high.flv&su=http://images.ted.com/images/ted/tedindex/embed-posters/DonNorman-2003.embed_thumbnail.jpg&vw=432&vh=240&ap=0&ti=480" /><embed src="http://video.ted.com/assets/player/swf/EmbedPlayer.swf" pluginspace="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" wmode="transparent" bgColor="#ffffff" width="446" height="326" allowFullScreen="true" flashvars="vu=http://video.ted.com/talks/embed/DonNorman_2003-embed_high.flv&su=http://images.ted.com/images/ted/tedindex/embed-posters/DonNorman-2003.embed_thumbnail.jpg&vw=432&vh=240&ap=0&ti=480"></embed></object>
+<object width="446" height="326"><param name="movie" value="http://video.ted.com/assets/player/swf/EmbedPlayer.swf"></param><param name="allowFullScreen" value="true" /><param name="wmode" value="transparent"></param><param name="bgColor" value="#ffffff"></param> <param name="flashvars" value="vu=http://video.ted.com/talks/embed/DonNorman_2003-embed_high.flv&su=http://images.ted.com/images/ted/tedindex/embed-posters/DonNorman-2003.embed_thumbnail.jpg&vw=432&vh=240&ap=0&ti=480" /><embed src="//video.ted.com/assets/player/swf/EmbedPlayer.swf" pluginspace="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" wmode="transparent" bgColor="#ffffff" width="446" height="326" allowFullScreen="true" flashvars="vu=http://video.ted.com/talks/embed/DonNorman_2003-embed_high.flv&su=http://images.ted.com/images/ted/tedindex/embed-posters/DonNorman-2003.embed_thumbnail.jpg&vw=432&vh=240&ap=0&ti=480"></embed></object>
 </p>
 
 This part of his talk really stuck out for me (transcription errors mine):
@@ -43,7 +43,7 @@ point.
 
 # Miro
 
-<img src="http://dl.getdropbox.com/u/1301040/blog/2009/06/miro2.png" alt="miro" title="miro" width="94" height="78" class="right100">
+<img src="//dl.getdropbox.com/u/1301040/blog/2009/06/miro2.png" alt="miro" title="miro" width="94" height="78" class="right100">
 
 BTW, thanks to
 [stephen](http://trentm.com/2009/04/re-installing-mac-os-x-software-i-use.html#comment-178393871).

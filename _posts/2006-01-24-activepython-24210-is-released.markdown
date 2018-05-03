@@ -6,7 +6,7 @@ published: true
 categories: [python, activestate]
 ---
 
-<div style="float: right; margin-left: 10px; margin-bottom: 10px;"> <a title="photo sharing" href="http://www.flickr.com/photos/trento/66727800/"><img src="http://static.flickr.com/28/66727800_9692d76006_m.jpg" style="border: 2px solid rgb(0, 0, 0);" /></a> <br /> <span style="font-size: 0.9em; margin-top: 0px;">&nbsp; <a href="http://www.flickr.com/photos/trento/66727800/">python skeleton</a>&nbsp; <br />&nbsp; Originally uploaded by <a href="http://www.flickr.com/people/trento/">trento</a>. </span></div>
+<div style="float: right; margin-left: 10px; margin-bottom: 10px;"> <a title="photo sharing" href="http://www.flickr.com/photos/trento/66727800/"><img src="//static.flickr.com/28/66727800_9692d76006_m.jpg" style="border: 2px solid rgb(0, 0, 0);" /></a> <br /> <span style="font-size: 0.9em; margin-top: 0px;">&nbsp; <a href="http://www.flickr.com/photos/trento/66727800/">python skeleton</a>&nbsp; <br />&nbsp; Originally uploaded by <a href="http://www.flickr.com/people/trento/">trento</a>. </span></div>
 
 <p><a href="http://www.activestate.com/Products/ActivePython/">ActivePython 2.4.2.10</a> is out!</p>
 

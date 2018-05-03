@@ -6,7 +6,7 @@ published: true
 categories: [komodo, activestate]
 ---
 
-<div style="float: left; margin-right: 10px; margin-bottom: 10px;"> <a href="http://www.flickr.com/photos/trento/115615668/" title="komodo and jolt"><img src="http://static.flickr.com/55/115615668_3c9e7a0fec_m.jpg" /></a> </div>
+<div style="float: left; margin-right: 10px; margin-bottom: 10px;"> <a href="http://www.flickr.com/photos/trento/115615668/" title="komodo and jolt"><img src="//static.flickr.com/55/115615668_3c9e7a0fec_m.jpg" /></a> </div>
 
 <p>Komodo 3.5.2 recently won <a href="http://www.sdmagazine.com/pressroom/jolt_finalists_2006.html">a Software Development Productivity Award</a>. (I've been using too many exclamation marks recently, so I'll refrain here.)</p>
 

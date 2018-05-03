@@ -6,7 +6,7 @@ published: true
 categories: [personal]
 ---
 
-<div class="left"><a href="http://www.flickr.com/photos/trento/380239143/" title="mini-mick"><img src="http://farm1.static.flickr.com/129/380239143_b182571cb8_m.jpg" width="240" height="162" alt="ultrasound 1" /></a></div>
+<div class="left"><a href="http://www.flickr.com/photos/trento/380239143/" title="mini-mick"><img src="//farm1.static.flickr.com/129/380239143_b182571cb8_m.jpg" width="240" height="162" alt="ultrasound 1" /></a></div>
 
 <div style="clear: both">
 Alli and I are happy to announce the upcoming birth of mini-mick (due

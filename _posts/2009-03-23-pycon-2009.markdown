@@ -7,7 +7,7 @@ categories: [python, activestate]
 ---
 
 <div class="left">
-<a href="http://us.pycon.org/"><img src="http://us.pycon.org/media/2009/public/pycon2009-horizontal-large-215x135.png" alt="PyCon 2009: Chicago"/></a>
+<a href="http://us.pycon.org/"><img src="//us.pycon.org/media/2009/public/pycon2009-horizontal-large-215x135.png" alt="PyCon 2009: Chicago"/></a>
 </div>
 
 <p>I'll be attending <a href="http://us.pycon.org/">PyCon</a> this year. It's been a few years since I've attended and <strong>wow</strong> has it ever grown: <a href="http://us.pycon.org/2009/conference/keynotes/">11 keynotes</a>, <a href="http://us.pycon.org/2009/conference/talks/">120 talks</a>, <a href="http://us.pycon.org/2009/conference/lightning/">5 hours of lightning talks</a>, the <a href="http://us.pycon.org/2009/about/summits/language/">Python Language Summit</a>, preceded by tutorial days and followed by <a href="http://us.pycon.org/2009/sprints/">days of sprints</a>.</p>
