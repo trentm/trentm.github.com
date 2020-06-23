@@ -1,12 +1,14 @@
 # top
 
-Personal website privacy thing in pocket
-https://vincent.bernat.im/en/blog/2018-more-privacy-blog
+- Personal website privacy thing in pocket
+  https://vincent.bernat.im/en/blog/2018-more-privacy-blog
+
 
 
 # style
 
 - better rendered logo image for small screen
+- better rendered logo period: check diff on https://trentm.com/logo.html
 - fonts:
     - http://www.google.com/webfonts/list?family=PT+Sans&subset=latin ?
     - http://blog.typekit.com/2011/10/20/new-from-typekit-faster-font-browsing/
