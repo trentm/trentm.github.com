@@ -4,6 +4,11 @@
   https://vincent.bernat.im/en/blog/2018-more-privacy-blog
 
 
+# posts
+
+- perhaps publish my "trent-tools" talk
+  slides for that here: https://github.com/trentm/talk-some-tools-i-use
+
 
 # style
 

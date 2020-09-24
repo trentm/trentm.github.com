@@ -52,6 +52,21 @@ table { border-collapse:collapse; border-spacing:0; }
 input, select { vertical-align:middle; }
 
 
+/* ---- self-hosted Google fonts
+ * See https://google-webfonts-helper.herokuapp.com/fonts/im-fell-english
+ * and https://vincent.bernat.ch/en/blog/2018-more-privacy-blog
+ */
+
+@font-face {
+  font-family: 'IM Fell English';
+  font-style: normal;
+  font-weight: 400;
+  src: local('IM FELL English Roman'), local('IM_FELL_English_Roman'),
+       url('../fonts/im-fell-english-v10-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/im-fell-english-v10-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+
 
 /* ---- 24px vertical rhythm
  * <http://webtypography.net/Rhythm_and_Proportion/Vertical_Motion/2.2.2/>
