@@ -1,3 +1,5 @@
 /_site
 /_tmp
 /d
+/.DS_Store
+/.jekyll-cache/
