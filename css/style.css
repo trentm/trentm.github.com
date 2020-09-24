@@ -292,34 +292,6 @@ ul ul ul { list-style-type: circle; }
 }
 
 
-#comments #dsq-global-toolbar,
-#dsq-comments-title,
-.dsq-options,
-a.dsq-brlink,
-.dsq-like,
-#dsq-sort-by,
-#dsq-sort-by + h3,
-.dsq-comment-footer-reply {
-  display: none !important;
-}
-#disqus_thread {
-  margin-top: 24px;
-}
-/*#comments #dsq-comments-title {
-  display: none !important;
-}*/
-.dsq-full-comment {
-  font-size: 16px;
-  line-height: 24px;
-}
-#dsq-content h3 {
-  padding: 0;
-}
-#dsq-subscribe {
-  font-size: 90%;
-}
-
-
 /* ---- custom classes */
 
 img.left100, img.left150, img.left200 {
