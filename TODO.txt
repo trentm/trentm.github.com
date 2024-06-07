@@ -38,8 +38,6 @@
 - move associated images/files from Dropbox to here
 - 'mk lint': add link check. add smart-quote check in blockquotes as well
   markdown footnotes. list other markdown-ification features that liquid might not have.
-- offer a std "reply to @trentmick on Twitter", which includes enough
-  info (bit.ly API?) to track ... and then show that via JS
 - typography nerd: use '§' for section links rather than '#' ?
 - play with Qunit and test/... from html5boilerplate. Qunit vs. selenium?
 - apple-touch-icon.png
