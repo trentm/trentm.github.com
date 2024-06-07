@@ -9,24 +9,4 @@ title: Trent Mick
 <div>
   <h1>Not found</h1>
   <p>:(</p>
-  <p id="details"></p>
 </div>
-
-<script>
-var redirects = ({% include redirectinfo.json %});
-
-$(document).ready(function() {
-  var redirect = redirects[window.location.pathname];
-  console.log("redir to: " + redirect);
-  if (redirect === undefined) {
-    // pass
-  } else if (redirect === null) {
-    $("#details").html(
-      "It looks like you were redirected from my old blog, but I haven't yet "
-      + "migrated this post.")
-  } else {
-    window.location = redirect;
-  }
-})
-
-</script>
