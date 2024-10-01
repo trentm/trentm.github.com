@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 import sys
 import os
@@ -22,7 +22,7 @@ def query(question, default=None):
     if default:
         s += " [%s]" % default
     s += ": "
-    answer = raw_input(s)
+    answer = input(s)
     answer = answer.strip()
     if not answer:
         return default
@@ -40,10 +40,8 @@ def _slugify(value):
     From Django's "django/template/defaultfilters.py".
     """
     import unicodedata
-    if not isinstance(value, unicode):
-        value = unicode(value)
-    value = unicodedata.normalize('NFKD', value).encode('ascii', 'ignore')
-    value = unicode(_slugify_strip_re.sub('', value).strip().lower())
+    value = unicodedata.normalize('NFKD', value).encode('ascii', 'ignore').decode()
+    value = _slugify_strip_re.sub('', value).strip().lower()
     return _slugify_hyphenate_re.sub('-', value)
 ## end of http://code.activestate.com/recipes/577257/ }}}
 
@@ -79,4 +77,4 @@ template += [
 codecs.open(path, 'w', 'utf-8').write('\n'.join(template))
 print("Wrote '%s'" % path)
 os.system("git add %s" % path)
-os.system("open -a 'Komodo IDE 8.app' %s" % path)
+os.system("open -a 'Visual Studio Code.app' %s" % path)
