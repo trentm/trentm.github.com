@@ -23,31 +23,21 @@ A set of guidelines for ANSI style/colour usage. These are limited to my experie
 
 Here are some examples, with screenshots, of programs that use colours/styles in the terminal that are problematic for readability. Some of these might be outdated. I hadn't noted program version or the date when collecting these. Also, bad me for never having opened issues on these projects regarding the colour issue.
 
-### webpack
-
 Webpack using bright yellow.
 
 ![webpack program using bright yellow](/img/ansi-color-webpack.png)
-
-### npm install
 
 `npm install` using bright yellow for the count of moderate vulnerabilities.
 
 ![npm using bright yellow for a moderate vulnerability](/img/ansi-color-npm.png)
 
-### nvm ls
-
 `nvm ls` using bright yellow for some aliases.
 
 !['nvm ls' using bright yellow](/img/ansi-color-nvm.png)
 
-### maven test output
-
 Maven test output using bright yellow.
 
 ![maven test output using bright yellow](/img/ansi-color-maven.png)
-
-### az login
 
 `az login` using bright yellow.
 `az` is the [Azure CLI](https://learn.microsoft.com/en-us/cli/azure/)
